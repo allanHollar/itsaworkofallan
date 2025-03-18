@@ -29,7 +29,7 @@ const AppBanner = () => {
           className="drop-shadow-md font-general-semibold text-2xl text-center text-white lg:text-3xl xl:text-7xl dark:text-primary-light"
           style={{ textShadow: "0 0 20px #000" }}
         >
-          Hello, I'm Allan
+          hello, I'm Allan =)
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
@@ -42,7 +42,7 @@ const AppBanner = () => {
           className="mt-4 font-general-medium text-center text-lg text-white md:text-xl lg:text-2xl xl:text-3xl dark:text-gray-200 leading-normal"
           style={{ textShadow: "0 0 20px #000)" }}
         >
-          A Senior Frontend Engineer & UX/UI Enthusiast
+          a Senior Frontend Engineer & UX/UI enthusiast!
         </motion.p>
       </div>
       {/* <motion.div
