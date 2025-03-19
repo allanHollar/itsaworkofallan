@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ProjectsProvider } from "../context/ProjectsContext";
 import { AboutMeProvider } from "../context/AboutMeContext";
+import { ResumeProvider } from "../context/ResumeContext";
 import AppBanner from "../components/shared/AppBanner/AppBanner";
 import Button from "../components/reusable/Button";
 import AboutMeBio from "../components/about/AboutMeBio";
-import AboutCounter from "../components/about/AboutCounter";
-import AboutClients from "../components/about/AboutClients";
 import ProjectsGrid from "../components/projects/ProjectsGrid";
+import Resume from "../components/resume/Resume";
 
 const Home = () => {
   return (
@@ -22,25 +22,12 @@ const Home = () => {
         >
           <AboutMeBio />
         </motion.div>
-
-        {/** Counter without paddings */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, delay: 1 }}
-          exit={{ opacity: 0 }}
-        >
-          <AboutCounter />
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, delay: 1 }}
-          exit={{ opacity: 0 }}
-          className="mx-auto container"
-        >
-          <AboutClients />
-        </motion.div>
       </AboutMeProvider>
+
+      <ResumeProvider>
+        <Resume />
+      </ResumeProvider>
+
       <ProjectsProvider>
         <ProjectsGrid />
       </ProjectsProvider>
