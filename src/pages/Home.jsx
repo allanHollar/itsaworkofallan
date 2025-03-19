@@ -1,18 +1,49 @@
 import { Link } from "react-router-dom";
-import AppBanner from "../components/shared/AppBanner";
-import ProjectsGrid from "../components/projects/ProjectsGrid";
+import { motion } from "framer-motion";
 import { ProjectsProvider } from "../context/ProjectsContext";
+import { AboutMeProvider } from "../context/AboutMeContext";
+import AppBanner from "../components/shared/AppBanner/AppBanner";
 import Button from "../components/reusable/Button";
+import AboutMeBio from "../components/about/AboutMeBio";
+import AboutCounter from "../components/about/AboutCounter";
+import AboutClients from "../components/about/AboutClients";
+import ProjectsGrid from "../components/projects/ProjectsGrid";
 
 const Home = () => {
   return (
-    <div className="mx-auto">
-      <AppBanner></AppBanner>
+    <div className="w-full">
+      <AppBanner />
+      <AboutMeProvider>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, delay: 1 }}
+          exit={{ opacity: 0 }}
+          className="bg-[#1B1212] w-full"
+        >
+          <AboutMeBio />
+        </motion.div>
 
+        {/** Counter without paddings */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, delay: 1 }}
+          exit={{ opacity: 0 }}
+        >
+          <AboutCounter />
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, delay: 1 }}
+          exit={{ opacity: 0 }}
+          className="mx-auto container"
+        >
+          <AboutClients />
+        </motion.div>
+      </AboutMeProvider>
       <ProjectsProvider>
-        <ProjectsGrid></ProjectsGrid>
+        <ProjectsGrid />
       </ProjectsProvider>
-
       <div className="flex justify-center mt-8 sm:mt-10">
         <Link
           to="/projects"
