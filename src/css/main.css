@@ -1132,6 +1132,10 @@ select {
   fill: currentColor;
 }
 
+.object-cover {
+  object-fit: cover;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
@@ -1785,6 +1789,18 @@ select {
     gap: 2rem;
   }
 
+  .sm\:gap-12 {
+    gap: 3rem;
+  }
+
+  .sm\:gap-14 {
+    gap: 3.5rem;
+  }
+
+  .sm\:gap-20 {
+    gap: 5rem;
+  }
+
   .sm\:border-t-0 {
     border-top-width: 0px;
   }
@@ -1850,6 +1866,10 @@ select {
 
   .sm\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .sm\:text-left {
+    text-align: left;
   }
 
   .sm\:text-xl {
