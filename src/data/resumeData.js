@@ -1,40 +1,40 @@
 export const resumeData = {
   languages: [
     {
-      bgColor: "#9a5938",
+      bgColor: "#A59D84",
       completed: "100",
       id: 2,
       title: "HTML / CSS / SASS",
     },
     {
-      bgColor: "#4f200f",
-      completed: "90",
-      id: 3,
-      title: "JavaScript (ES6)",
-    },
-    {
-      bgColor: "#c49c64",
-      completed: "75",
-      id: 6,
-      title: "Next.js",
-    },
-    {
-      bgColor: "#b86c45",
-      completed: "70",
-      id: 5,
-      title: "Node.js",
-    },
-    {
-      bgColor: "#a97a57",
+      bgColor: "#DED0B6",
       completed: "95",
       id: 1,
       title: "React",
     },
     {
-      bgColor: "#954520",
+      bgColor: "#d9b89c",
+      completed: "90",
+      id: 3,
+      title: "JavaScript (ES6)",
+    },
+    {
+      bgColor: "#D7D3BF",
       completed: "75",
       id: 4,
       title: "TypeScript",
+    },
+    {
+      bgColor: "#EAD8C0",
+      completed: "75",
+      id: 6,
+      title: "Next.js",
+    },
+    {
+      bgColor: "#BBAB8C",
+      completed: "70",
+      id: 5,
+      title: "Node.js",
     },
   ],
   TechnologiesAndTools: [
