@@ -1,10 +1,11 @@
 import { useState, createContext } from "react";
+
 import { resumeData } from "../data/resumeData";
 
 const ResumeContext = createContext();
 
 export const ResumeProvider = ({ children }) => {
-  const [resume, setResumeData] = useState(resumeData);
+  const [resume] = useState(resumeData);
 
   return (
     <ResumeContext.Provider

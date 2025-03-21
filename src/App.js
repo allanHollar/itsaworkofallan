@@ -1,6 +1,7 @@
 import { AnimatePresence } from "framer-motion";
 import { lazy, Suspense } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+
 import ScrollToTop from "./components/ScrollToTop";
 import AppFooter from "./components/shared/AppFooter";
 import AppHeader from "./components/shared/AppHeader";

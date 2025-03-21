@@ -1,5 +1,6 @@
-import { useEffect } from "react";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
+
 import hero from "../../../images/hero.jpg";
 import "./fireflies.sass";
 
@@ -40,7 +41,7 @@ const AppBanner = () => {
             duration: 0.9,
             delay: 0.1,
           }}
-          className="drop-shadow-md font-general-bold text-2xl text-center text-white lg:text-[72px] xl:text-7xl dark:text-primary-light"
+          className="drop-shadow-md font-general-bold text-2xl text-center text-white lg:text- xl:text-7xl dark:text-primary-light"
           style={{ textShadow: "0 0 20px rgba(0,0,0,0.75)" }}
         >
           Hello, I'm Allan

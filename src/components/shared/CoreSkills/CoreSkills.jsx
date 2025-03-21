@@ -1,6 +1,7 @@
-import { useContext, useState, useEffect } from "react";
 import ProgressBar from "@ramonak/react-progress-bar";
+import { useContext, useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+
 import ResumeContext from "../../../context/ResumeContext";
 
 const AnimatedProgressBar = ({ resume }) => {
@@ -66,7 +67,8 @@ const CoreSkills = () => {
           </li>
           {resume.technologiesAndTools.map((techTool, index) => (
             <li className="inline-block" key={index}>
-              {techTool},&nbsp;
+              {techTool}
+              {index < resume.technologiesAndTools.length - 1 && ",\u00A0"}
             </li>
           ))}
         </ul>
@@ -75,7 +77,8 @@ const CoreSkills = () => {
           <li className="inline-block mr-1 underline">Soft Skills:&nbsp;</li>
           {resume.softSkills.map((friendlySkills, index) => (
             <li className="inline-block" key={index}>
-              {friendlySkills}&nbsp;
+              {friendlySkills}
+              {index < resume.softSkills.length - 1 && ",\u00A0"}
             </li>
           ))}
         </ul>

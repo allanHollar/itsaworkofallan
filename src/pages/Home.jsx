@@ -1,14 +1,12 @@
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ProjectsProvider } from "../context/ProjectsContext";
-import { AboutMeProvider } from "../context/AboutMeContext";
-import { ResumeProvider } from "../context/ResumeContext";
-import AppBanner from "../components/shared/AppBanner/AppBanner";
-import Button from "../components/reusable/Button";
+
 import AboutMeBio from "../components/about/AboutMeBio";
-import ProjectsGrid from "../components/projects/ProjectsGrid";
+import AppBanner from "../components/shared/AppBanner/AppBanner";
 import CoreSkills from "../components/shared/CoreSkills/CoreSkills";
 import { HorizontalRule } from "../components/shared/HorizontalRule";
+import WorkHistory from "../components/shared/WorkHistory/WorkHistory";
+import { AboutMeProvider } from "../context/AboutMeContext";
+import { ResumeProvider } from "../context/ResumeContext";
 
 const Home = () => {
   return (
@@ -27,12 +25,12 @@ const Home = () => {
       <ResumeProvider>
         <CoreSkills />
       </ResumeProvider>
-
       <HorizontalRule />
 
       <ResumeProvider>
-        <CoreSkills />
+        <WorkHistory />
       </ResumeProvider>
+      <HorizontalRule />
     </div>
   );
 };

@@ -1,10 +1,11 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { FiMenu, FiMoon, FiSun, FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
+
 import useThemeSwitcher from "../../hooks/useThemeSwitcher";
-import HireMeModal from "../HireMeModal";
 import arBrand from "../../images/ar-brand.svg";
-import { motion } from "framer-motion";
+import HireMeModal from "../HireMeModal";
 import Button from "../reusable/Button";
 
 const AppHeader = () => {

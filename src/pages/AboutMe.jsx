@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
+
 import AboutMeBio from "../components/about/AboutMeBio";
 import { AboutMeProvider } from "../context/AboutMeContext";
-import { motion } from "framer-motion";
 
 const About = () => {
   return (

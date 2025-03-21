@@ -1,4 +1,5 @@
 import { useState, createContext } from 'react';
+
 import { projectsData } from '../data/projects';
 
 // Create projects context
