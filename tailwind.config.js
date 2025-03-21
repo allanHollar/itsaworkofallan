@@ -20,6 +20,9 @@ module.exports = {
         "secondary-dark": "#102D44",
         "ternary-dark": "#1E3851",
       },
+      boxShadow: {
+        "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
+      },
       container: {
         padding: {
           DEFAULT: "1rem",

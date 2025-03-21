@@ -37,7 +37,7 @@ export const resumeData = {
       title: "Node.js",
     },
   ],
-  TechnologiesAndTools: [
+  technologiesAndTools: [
     "HTML",
     "CSS",
     "JavaScript (ES6+)",
@@ -79,7 +79,7 @@ export const resumeData = {
     "Developer Tools",
     "Agile Software Development",
   ],
-  SoftSkills: [
+  softSkills: [
     "Collaboration",
     "Technical Communication",
     "Problem Solving",
