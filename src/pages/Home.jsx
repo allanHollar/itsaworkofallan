@@ -1,11 +1,13 @@
 import { motion } from "framer-motion";
+import { AboutMeProvider } from "../context/AboutMeContext";
+import { ResumeProvider } from "../context/ResumeContext";
+import { ProjectsProvider } from "../context/ProjectsContext";
 import AboutMeBio from "../components/about/AboutMeBio";
 import AppBanner from "../components/shared/AppBanner/AppBanner";
 import CoreSkills from "../components/shared/CoreSkills/CoreSkills";
-import { HorizontalRule } from "../components/shared/HorizontalRule";
+import HorizontalRule from "../components/shared/HorizontalRule";
 import WorkHistory from "../components/shared/WorkHistory/WorkHistory";
-import { AboutMeProvider } from "../context/AboutMeContext";
-import { ResumeProvider } from "../context/ResumeContext";
+import ProjectsGrid from "../components/projects/ProjectsGrid";
 
 const Home = () => {
   return (
@@ -29,6 +31,11 @@ const Home = () => {
       <ResumeProvider>
         <WorkHistory />
       </ResumeProvider>
+      <HorizontalRule />
+
+      <ProjectsProvider>
+        <ProjectsGrid />
+      </ProjectsProvider>
       <HorizontalRule />
     </div>
   );

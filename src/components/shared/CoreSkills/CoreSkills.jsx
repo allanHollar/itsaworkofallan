@@ -2,7 +2,7 @@ import ProgressBar from "@ramonak/react-progress-bar";
 import { useContext, useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import ResumeContext from "../../../context/ResumeContext";
-import CuteDog from "../../reusable/Tree/CuteDog";
+import CuteDog from "../../reusable/CuteDog/CuteDog";
 
 const AnimatedProgressBar = ({ resume }) => {
   const { ref, inView } = useInView({
