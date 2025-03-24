@@ -2,7 +2,7 @@ import "./coffee.sass";
 
 const CoffeeCup = () => {
   return (
-    <div className="cup" id="coffee">
+    <div className="mt-24 cup" id="coffee">
       <div className="coffee"></div>
     </div>
   );

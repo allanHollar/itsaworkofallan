@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-
 import AboutMeBio from "../components/about/AboutMeBio";
 import AppBanner from "../components/shared/AppBanner/AppBanner";
 import CoreSkills from "../components/shared/CoreSkills/CoreSkills";

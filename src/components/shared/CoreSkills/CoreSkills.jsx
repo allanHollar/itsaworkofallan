@@ -1,12 +1,12 @@
 import ProgressBar from "@ramonak/react-progress-bar";
 import { useContext, useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-
 import ResumeContext from "../../../context/ResumeContext";
+import CuteDog from "../../reusable/Tree/CuteDog";
 
 const AnimatedProgressBar = ({ resume }) => {
   const { ref, inView } = useInView({
-    threshold: 0.3,
+    threshold: 0.5,
     triggerOnce: true,
   });
 
@@ -45,6 +45,7 @@ const CoreSkills = () => {
             Core Skills
           </span>
         </h3>
+        <CuteDog />
       </div>
 
       <div className="pb-12 w-3/4">
