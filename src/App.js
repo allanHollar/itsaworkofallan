@@ -25,14 +25,7 @@ function App() {
           <Suspense fallback={""}>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="projects" element={<Projects />} />
-              <Route
-                path="projects/single-project"
-                element={<ProjectSingle />}
-              />
-
-              <Route path="about" element={<About />} />
-              <Route path="contact" element={<Contact />} />
+              <Route path="projects/project-one" element={<ProjectSingle />} />
             </Routes>
           </Suspense>
           <AppFooter />

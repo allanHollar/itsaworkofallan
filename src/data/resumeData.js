@@ -43,7 +43,7 @@ export const resumeData = {
       jobTitle: "Sr. Front-End Engineer",
       tenure: "Jan 2020 - Oct 2024",
       responsibilities: [
-        "Tech Stack: React, TypeScript, GraphQL, Tailwind CSS, CommerceTools CMS",
+        "Tech Stack: React, TypeScript, GraphQL, Node.js, Tailwind CSS, CommerceTools CMS",
         "Developed and maintained frontend applications using React, TypeScript, and GraphQL.",
         "Created responsive design implementations with pixel-perfect accuracy.",
         "Utilized SCSS preprocessor to improve styling maintainability and scalability.",
