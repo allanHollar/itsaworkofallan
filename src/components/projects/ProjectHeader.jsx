@@ -1,11 +1,11 @@
 import { useContext } from "react";
-import { FiBookmark, FiUserCheck } from "react-icons/fi";
 
 import SingleProjectContext from "../../context/SingleProjectContext";
 
-const ProjectSingleHeader = () => {
+const ProjectSingleHeader = ({ projectId }) => {
   const { singleProjectData } = useContext(SingleProjectContext);
-  const projectData = singleProjectData.projectOne;
+  const project = projectId;
+  const projectData = singleProjectData[project];
 
   return (
     <div>
@@ -16,13 +16,11 @@ const ProjectSingleHeader = () => {
       </h2>
       <div className="flex">
         <div className="flex items-center mr-10">
-          <FiBookmark className="mr-1" />
-          <span>{projectData.projectHeader.tenure}</span>
+          <span>⏳ {projectData.projectHeader.tenure}</span>
         </div>
 
         <div className="flex items-center">
-          <FiUserCheck className="mr-1" />
-          <span>{projectData.projectHeader.jobTitle}</span>
+          <span>🥷🏼 {projectData.projectHeader.jobTitle}</span>
         </div>
       </div>
     </div>

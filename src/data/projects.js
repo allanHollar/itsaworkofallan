@@ -5,8 +5,8 @@ import ProjectMasterClass from "../images/project-masterclass.webp";
 import ProjectMogreet from "../images/project-mogreet.webp";
 import ProjectPledgeling from "../images/project-pledgeling.webp";
 
-export const projectsData = [
-  {
+export const projectsData = {
+  "project-one": {
     id: 1,
     title: "Five Below (e-commerce)",
     category: "Web Dev",
@@ -17,34 +17,34 @@ export const projectsData = [
       tags: "UI / Frontend",
     },
   },
-  {
+  "project-two": {
     id: 2,
     title: "Hollar (e-commerce)",
     category: "Web Dev",
     img: ProjectHollar,
   },
-  {
+  "project-three": {
     id: 3,
     title: "MasterClass (SaaS Learning Platform)",
-    category: "UI/UX Design · Web Dev",
+    category: "Web · Dev UI/UX Design",
     img: ProjectMasterClass,
   },
-  {
+  "project-four": {
     id: 4,
     title: "Pledgeling (SaaS Philanthropy)",
-    category: "UI/UX Design · Web Dev",
+    category: "Web · Dev UI/UX Design",
     img: ProjectPledgeling,
   },
-  {
+  "project-five": {
     id: 5,
     title: "Mogreet(SaaS - Mobile Marketing)",
-    category: "UI/UX Design · Web Dev",
+    category: "Web · Dev UI/UX Design",
     img: ProjectMogreet,
   },
-  {
+  "project-six": {
     id: 6,
-    title: "Fox (SaaS - Digital Marketing)",
-    category: "UI/UX Design · Web Dev",
+    title: "Various Client Work",
+    category: "Web · Dev UI/UX Design",
     img: PorjectClentWork,
   },
-];
+};

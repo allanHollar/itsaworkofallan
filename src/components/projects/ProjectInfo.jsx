@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import SingleProjectContext from "../../context/SingleProjectContext";
 
-const ProjectInfo = () => {
+const ProjectInfo = ({ projectId }) => {
   const { singleProjectData } = useContext(SingleProjectContext);
-  const projectData = singleProjectData.projectOne;
+  const projectData = singleProjectData[projectId];
 
   return (
     <div className="block sm:flex gap-0 sm:gap-10 mt-14">
@@ -13,19 +13,19 @@ const ProjectInfo = () => {
           <h4 className="mb-1 font-semibold tracking-wide">
             {projectData.projectInfo.clientHeading}
           </h4>
-          <ul className="leading-loose">
+          <ul className="leading-loose tracking-wide">
             {projectData.projectInfo.companyInfo.map((info) => {
               return (
                 <li key={info.id}>
                   {info.title === "Website" ? (
                     <>
-                      <span>{info.title}: </span>
-                      <a href={info.details}> {info.details}</a>{" "}
+                      <a className="truncate" href={info.details}>
+                        {info.emoji}: {info.details}
+                      </a>{" "}
                     </>
                   ) : (
                     <>
-                      <span>{info.title}: </span>
-                      {info.details}
+                      {info.emoji}: {info.details}
                     </>
                   )}
                 </li>
@@ -36,10 +36,10 @@ const ProjectInfo = () => {
 
         {/* Single project technologies */}
         <div className="mb-7">
-          <h4 className="mb-1 font-semibold tracking-wide">
-            {projectData.projectInfo.technologies[0].title}
-          </h4>
-          <p>{projectData.projectInfo.technologies[0].techs.join(", ")}</p>
+          <p className="leading-loose tracking-wide">
+            {projectData.projectInfo.technologies[0].emoji}:{" "}
+            {projectData.projectInfo.technologies[0].techs.join(", ")}
+          </p>
         </div>
       </div>
 
@@ -50,7 +50,7 @@ const ProjectInfo = () => {
         </h3>
         {projectData.projectInfo.projectDetails.map((details) => {
           return (
-            <p className="mb-4" key={details.id}>
+            <p className="mb-4 leading-loose" key={details.id}>
               {details.details}
             </p>
           );

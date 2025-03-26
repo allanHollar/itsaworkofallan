@@ -4,7 +4,8 @@ import SingleProjectContext from "../../context/SingleProjectContext";
 
 const ProjectGallery = () => {
   const { singleProjectData } = useContext(SingleProjectContext);
-  const projectData = singleProjectData.projectOne;
+  const projectId = "project-one";
+  const projectData = singleProjectData[projectId];
 
   return (
     <div className="sm:gap-10 grid grid-cols-1 sm:grid-cols-3 mt-12">

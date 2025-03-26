@@ -9,30 +9,25 @@ import "./css/App.css";
 import "./css/main.css";
 import UseScrollToTop from "./hooks/useScrollToTop";
 
-const About = lazy(() => import("./pages/AboutMe"));
-const Contact = lazy(() => import("./pages/Contact.jsx"));
 const Home = lazy(() => import("./pages/Home"));
-const Projects = lazy(() => import("./pages/Projects"));
 const ProjectSingle = lazy(() => import("./pages/ProjectSingle.jsx"));
 
 function App() {
   return (
-    <AnimatePresence>
-      <div className="subpixel-antialiased bg-secondary-light transition duration-300">
-        <Router>
-          <ScrollToTop />
-          <AppHeader />
-          <Suspense fallback={""}>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="projects/project-one" element={<ProjectSingle />} />
-            </Routes>
-          </Suspense>
-          <AppFooter />
-        </Router>
-        <UseScrollToTop />
-      </div>
-    </AnimatePresence>
+    <Router>
+      <ScrollToTop />
+      <AppHeader />
+      <AnimatePresence mode="wait">
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects/:projectId" element={<ProjectSingle />} />
+          </Routes>
+        </Suspense>
+      </AnimatePresence>
+      <AppFooter />
+      <UseScrollToTop />
+    </Router>
   );
 }
 
