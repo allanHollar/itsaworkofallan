@@ -5,9 +5,10 @@ const CuteDog = () => {
   return (
     <div className="dog-container">
       <div className="dog">
+        <div className="ears-left dog-ears"></div>
+        <div className="ears-right dog-ears"></div>
+
         <div className="dog-head">
-          <div className="ears-left dog-ears"></div>
-          <div className="ears-right dog-ears"></div>
           <div className="dog-eyes"></div>
           <div className="dog-mouth">
             <div className="dog-nose"></div>

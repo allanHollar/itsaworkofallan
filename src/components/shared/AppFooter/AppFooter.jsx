@@ -49,7 +49,12 @@ const AppFooter = () => {
                   <ul className="inline-block m-auto mt-5 border-white border-t-[3px] w-96 text-center">
                     {socialLinks.map((link, index) => (
                       <li className="inline" key={index}>
-                        <a href={link.url} className="slider-nav-item">
+                        <a
+                          href={link.url}
+                          className="slider-nav-item"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           {link.icon}
                         </a>
                       </li>
