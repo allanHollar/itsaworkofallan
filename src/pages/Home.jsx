@@ -36,7 +36,6 @@ const Home = () => {
       <ProjectsProvider>
         <ProjectsGrid />
       </ProjectsProvider>
-      <HorizontalRule />
     </div>
   );
 };

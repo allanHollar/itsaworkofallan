@@ -17,7 +17,7 @@ const ProjectSingle = () => {
         duration: 0.6,
         delay: 0.15,
       }}
-      className="mx-auto mt-5 sm:mt-10 container"
+      className="mx-auto mt-5 sm:mt-10 mb-10 container"
     >
       <SingleProjectProvider>
         <ProjectHeader projectId={projectId} />

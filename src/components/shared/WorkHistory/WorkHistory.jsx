@@ -8,7 +8,7 @@ const WorkHistory = () => {
   return (
     <div className="flex sm:flex-row flex-col sm:gap-3 mx-auto pt-20 pb-0 container">
       <div className="w-1/4">
-        <h3 className="mb-28 font-semibold text-[#5A5A5A] text-2xl tracking-wide">
+        <h3 className="mb-28 font-semibold text-[#5A5A5A] text-2xl tracking-wide happy-monkey-regular">
           <span className="border-[#efd5b4] border-b-4">Work History</span>
         </h3>
         <CoffeeCup />

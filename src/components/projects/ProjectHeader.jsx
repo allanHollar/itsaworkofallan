@@ -9,7 +9,7 @@ const ProjectSingleHeader = ({ projectId }) => {
 
   return (
     <div>
-      <h2 className="mb-4 font-semibold text-[#5A5A5A] text-3xl tracking-wide">
+      <h2 className="mb-4 text-[#5A5A5A] text-3xl tracking-wide happy-monkey-regular">
         <span className="border-[#efd5b4] border-b-4">
           {projectData.projectHeader.title}
         </span>

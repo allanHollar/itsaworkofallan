@@ -13,14 +13,20 @@ body {
 
 /* Fonts */
 @font-face {
-  font-family: "Manrope", sans-serif;
+  font-family: "Lato", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
+.happy-monkey-regular {
+  font-family: "Happy Monkey", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .font-general-variable {
-  font-family: "Manrope", sans-serif;
+  font-family: "Lato", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -39,14 +45,14 @@ body {
 }
 
 @font-face {
-  font-family: "Manrope", sans-serif;
+  font-family: "Lato", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
 .font-general-extralight {
-  font-family: "Manrope", sans-serif;
+  font-family: "Lato", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
@@ -71,14 +77,14 @@ body {
 }
 
 .font-general-light {
-  font-family: "Manrope", sans-serif;
+  font-family: "Lato", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Manrope", sans-serif;
+  font-family: "Lato", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
@@ -100,7 +106,7 @@ Embed code in the <head> of your html
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lato:wght@200..800&display=swap" rel="stylesheet">
 Lato: CSS classes
 
 .lato-thin {
@@ -194,14 +200,14 @@ Lato: CSS classes
 }
 
 @font-face {
-  font-family: "Manrope", sans-serif;
+  font-family: "Lato", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
 .font-general-regular {
-  font-family: "Manrope", sans-serif;
+  font-family: "Lato", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -220,14 +226,14 @@ Lato: CSS classes
 }
 
 @font-face {
-  font-family: "Manrope", sans-serif;
+  font-family: "Lato", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
 .font-general-medium {
-  font-family: "Manrope", sans-serif;
+  font-family: "Lato", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -246,14 +252,14 @@ Lato: CSS classes
 }
 
 @font-face {
-  font-family: "Manrope", sans-serif;
+  font-family: "Lato", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
 }
 
 .font-general-semibold {
-  font-family: "Manrope", sans-serif;
+  font-family: "Lato", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
@@ -272,14 +278,14 @@ Lato: CSS classes
 }
 
 @font-face {
-  font-family: "Manrope", sans-serif;
+  font-family: "Lato", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
 }
 
 .font-general-bold {
-  font-family: "Manrope", sans-serif;
+  font-family: "Lato", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;

@@ -9,7 +9,7 @@ import Image2 from "../images/web-project-2.jpg";
 export const projectsData = {
   "project-one": {
     projectHeader: {
-      icon: "Five Below",
+      title: "Five Below",
       tenure: "Jan 2020 - Oct 2024",
       jobTitle: "Senior Frontend Engineer",
     },

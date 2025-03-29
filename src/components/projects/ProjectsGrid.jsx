@@ -10,18 +10,19 @@ const ProjectsGrid = () => {
   return (
     <section className="mx-auto mt-8 sm:mt-10 py-5 sm:py-10 container">
       <div className="text-center">
-        <h3 className="mb-3 text-[#5A5A5A] text-3xl tracking-wide">
-          Built & Shipped!
+        <h3 className="mb-5 text-[#5A5A5A] text-4xl tracking-wide happy-monkey-regular">
+          <span className="border-[#efd5b4] border-b-4">Built & Shipped!</span>
         </h3>
+
         <img
-          className="block mx-auto"
+          className="block mx-auto mb-5"
           src={HappyNinja}
           alt="Happy Ninja"
-          width="75"
+          width="100"
         />
       </div>
 
-      <div className="sm:gap-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6">
+      <div className="sm:gap-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 mb-5">
         {Object.keys(projects).map((projectId) => {
           const project = projects[projectId];
           return (
