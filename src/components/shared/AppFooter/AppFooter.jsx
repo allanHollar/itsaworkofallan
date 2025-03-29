@@ -41,15 +41,15 @@ const AppFooter = () => {
           />
         </div>
 
-        <div class="social-overlap process-scetion mt100">
+        <div className="social-overlap process-scetion mt100">
           <div>
-            <div class="justify-content-center row">
-              <div class="social-bar">
-                <div class="mb-3 text-center social-icons iconpad">
+            <div className="justify-content-center row">
+              <div className="social-bar">
+                <div className="mb-3 text-center social-icons iconpad">
                   <ul className="inline-block m-auto mt-5 border-white border-t-[3px] w-96 text-center">
-                    {socialLinks.map((link) => (
-                      <li className="inline">
-                        <a href={link.url} class="slider-nav-item">
+                    {socialLinks.map((link, index) => (
+                      <li className="inline" key={index}>
+                        <a href={link.url} className="slider-nav-item">
                           {link.icon}
                         </a>
                       </li>

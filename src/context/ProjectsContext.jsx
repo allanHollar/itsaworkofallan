@@ -6,7 +6,7 @@ export const ProjectsContext = createContext();
 
 // Create the projects context provider
 export const ProjectsProvider = (props) => {
-  const [projects, setProjects] = useState(projectsData);
+  const [projects] = useState(projectsData);
 
   return (
     <ProjectsContext.Provider value={{ projects }}>
