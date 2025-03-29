@@ -10,12 +10,11 @@ $smoke: rgba(#333, 0.2)
   width: 150px
   border-radius: 0 0 150px 150px
   position: relative
-  background: $cup
+  background: linear-gradient(to right, #cec4a7, #ebe6d6)
   box-shadow: inset 17px -7px 0 0 #cec4a7
   display: flex
   justify-content: center
   align-items: center
-  color: $smoke
   user-select: none
   cursor: default
 
@@ -31,7 +30,7 @@ $smoke: rgba(#333, 0.2)
     border-radius: 50%
     top: -24px
     left: 0
-    box-shadow: inset 3px 0 0 0 $smoke, inset 0 0 0 4px $cup, inset 0 14px 0 0 #ebe6d6
+    box-shadow: inset 3px 0 0 0 #cec4a7, inset 0 14px 0 0 #ebe6d6
     z-index: 1
 
   // handle
@@ -53,7 +52,7 @@ $smoke: rgba(#333, 0.2)
     top: -22px
     left: 0
     border-radius: 50%
-    background: $coffee
+    background: radial-gradient(#9d6646,#8d5b3f,#7d5138,#6d4731,#5e3d2a)
 
     &::before, &::after
       content: ''

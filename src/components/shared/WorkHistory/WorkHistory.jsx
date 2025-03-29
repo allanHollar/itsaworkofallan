@@ -6,7 +6,10 @@ const WorkHistory = () => {
   const { resume } = useContext(ResumeContext);
 
   return (
-    <div className="flex sm:flex-row flex-col sm:gap-3 mx-auto pt-20 pb-0 container">
+    <div
+      id="work-history"
+      className="flex sm:flex-row flex-col sm:gap-3 mx-auto pt-20 pb-0 container"
+    >
       <div className="w-1/4">
         <h3 className="mb-28 font-semibold text-[#5A5A5A] text-2xl tracking-wide happy-monkey-regular">
           <span className="border-[#efd5b4] border-b-4">Work History</span>
@@ -21,7 +24,7 @@ const WorkHistory = () => {
               {workItem.company}
             </h4>
 
-            <p className="mb-5 text-lg italic">
+            <p className="mb-5 text-base italic">
               {workItem.jobTitle} - {workItem.tenure}
             </p>
 

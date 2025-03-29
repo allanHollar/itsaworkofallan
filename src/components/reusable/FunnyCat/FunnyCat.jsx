@@ -1,25 +1,28 @@
 import funnyCat from "../../../images/cute-cat.webp";
-import "./funnyCat.sass";
+import styles from "./FunnyCat.module.scss";
 
 const FunnyCat = () => {
   return (
-    <div className="catContainer">
-      <div className="cat">
+    <div className={styles.catContainer}>
+      <div className={styles.cat}>
         <img src={funnyCat} alt="Cat playing with a ball" />
-        <div className="left eye">
-          <div className="eyeWatch">
-            <div className="glare"></div>
+
+        <div className={`${styles.left} ${styles.eye}`}>
+          <div className={styles.eyeWatch}>
+            <div className={styles.glare}></div>
           </div>
         </div>
-        <div className="right eye">
-          <div className="eyeWatch">
-            <div className="glare"></div>
+
+        <div className={`${styles.right} ${styles.eye}`}>
+          <div className={styles.eyeWatch}>
+            <div className={styles.glare}></div>
           </div>
         </div>
       </div>
-      <div className="ballContainer">
-        <div className="ballShadow">
-          <div className="ball"></div>
+
+      <div className={styles.ballContainer}>
+        <div className={styles.ballShadow}>
+          <div className={styles.ball}></div>
         </div>
       </div>
     </div>

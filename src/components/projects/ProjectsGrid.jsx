@@ -8,7 +8,10 @@ const ProjectsGrid = () => {
   const { projects } = useContext(ProjectsContext);
 
   return (
-    <section className="mx-auto mt-8 sm:mt-10 py-5 sm:py-10 container">
+    <section
+      id="projects"
+      className="mx-auto mt-8 sm:mt-10 py-5 sm:py-10 container"
+    >
       <div className="text-center">
         <h3 className="mb-5 text-[#5A5A5A] text-4xl tracking-wide happy-monkey-regular">
           <span className="border-[#efd5b4] border-b-4">Built & Shipped!</span>

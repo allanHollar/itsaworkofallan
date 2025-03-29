@@ -23,6 +23,7 @@ const Home = () => {
           <AboutMeBio />
         </motion.div>
       </AboutMeProvider>
+
       <ResumeProvider>
         <CoreSkills />
       </ResumeProvider>

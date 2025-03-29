@@ -38,7 +38,10 @@ const CoreSkills = () => {
   const { resume } = useContext(ResumeContext);
 
   return (
-    <div className="flex sm:flex-row flex-col sm:gap-3 mx-auto pt-20 pb-0 container">
+    <div
+      id="core-skills"
+      className="flex sm:flex-row flex-col sm:gap-3 mx-auto pt-20 pb-0 container"
+    >
       <div className="w-1/4">
         <h3 className="mb-5 font-semibold text-[24px] tracking-wide">
           <span className="border-[#efd5b4] border-b-4 text-[#5A5A5A] happy-monkey-regular">

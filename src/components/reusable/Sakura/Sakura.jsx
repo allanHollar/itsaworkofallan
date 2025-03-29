@@ -1,9 +1,9 @@
-import "./sakura.css";
+import styles from "./Sakura.module.scss";
 
 const Sakura = () => {
   return (
-    <div className="sakura-container">
-      <div className="sakura">
+    <div className={styles.sakuraContainer}>
+      <div className={styles.sakura}>
         <span></span>
         <span></span>
         <span></span>

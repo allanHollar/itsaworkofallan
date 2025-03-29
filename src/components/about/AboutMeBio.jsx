@@ -7,7 +7,10 @@ const AboutMeBio = () => {
   const { aboutMe } = useContext(AboutMeContext);
 
   return (
-    <div className="flex sm:flex-row flex-col justify-center items-center sm:gap-20 mx-auto py-16 container">
+    <div
+      id="about"
+      className="flex sm:flex-row flex-col justify-center items-center sm:gap-20 mx-auto py-16 container"
+    >
       <div className="mx-auto mt-5 border-8 border-white rounded-full w-40 h-40 overflow-hidden">
         <img src={profileImage} className="w-full h-full object-cover" alt="" />
       </div>
