@@ -22,12 +22,16 @@ const socialLinks = [
 const AppFooter = () => {
   return (
     <div
+      id="connect"
       className="relative flex flex-col justify-end bg-cover bg-no-repeat mt-0 pt-5 h-[700px]"
       style={{ backgroundImage: `url(${FooterImage})` }}
     >
       <p
-        className="font-semibold text-3xl text-center text-white happy-monkey-regular"
-        style={{ textShadow: "rgba(0, 0, 0, 0.75) .05em .05em 3px" }}
+        className="font-semibold text-3xl text-center text-white leading-tight happy-monkey-regular [font-size-adjust:0.46]"
+        style={{
+          textShadow: "rgba(0, 0, 0, 0.75) .05em .05em 3px",
+          fontSizeAdjust: 0.5,
+        }}
       >
         Thanks for dropping by! Let’s connect and make <br />
         something awesome happen!
@@ -38,6 +42,8 @@ const AppFooter = () => {
             src={profileImage}
             className="w-full h-full object-cover"
             alt=""
+            width={144}
+            height={144}
           />
         </div>
 

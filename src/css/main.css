@@ -747,6 +747,14 @@ select {
   }
 }
 
+.\!visible {
+  visibility: visible !important;
+}
+
+.visible {
+  visibility: visible;
+}
+
 .fixed {
   position: fixed;
 }
@@ -927,6 +935,18 @@ select {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[185px\] {
+  height: 185px;
+}
+
+.h-\[32rem\] {
+  height: 32rem;
+}
+
+.h-\[200px\] {
+  height: 200px;
 }
 
 .max-h-screen {
@@ -1369,6 +1389,10 @@ select {
   line-height: 1.625;
 }
 
+.leading-tight {
+  line-height: 1.25;
+}
+
 .tracking-wide {
   letter-spacing: 0.025em;
 }
@@ -1501,6 +1525,10 @@ select {
 
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.\[font-size-adjust\:0\.46\] {
+  font-size-adjust: 0.46;
 }
 
 .hover\:border-\[\#5A5A5A\]:hover {

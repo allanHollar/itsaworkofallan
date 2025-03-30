@@ -23,6 +23,11 @@ const links = [
     title: "Projects",
     url: "projects",
   },
+  {
+    id: 5,
+    title: "Let's Connect!",
+    url: "connect",
+  },
 ];
 
 const AppHeader = () => {

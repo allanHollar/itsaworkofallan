@@ -13,7 +13,13 @@ const ProjectSingle = ({ title, category, image }) => {
     >
       <div className="bg-secondary-light dark:bg-ternary-dark shadow-md hover:shadow-xl mb-10 sm:mb-0 transition-all cursor-pointer">
         <div>
-          <img src={image} className="border-none" alt="Single Project" />
+          <img
+            src={image}
+            className="border-none"
+            alt="Single Project"
+            width={261}
+            height={324}
+          />
         </div>
         <div className="px-4 py-6 text-center">
           <p>{title}</p>

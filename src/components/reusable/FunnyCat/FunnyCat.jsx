@@ -5,7 +5,12 @@ const FunnyCat = () => {
   return (
     <div className={styles.catContainer}>
       <div className={styles.cat}>
-        <img src={funnyCat} alt="Cat playing with a ball" />
+        <img
+          src={funnyCat}
+          alt="Cat playing with a ball"
+          width={200}
+          height={200}
+        />
 
         <div className={`${styles.left} ${styles.eye}`}>
           <div className={styles.eyeWatch}>

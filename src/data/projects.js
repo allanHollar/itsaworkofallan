@@ -37,7 +37,7 @@ export const projectsData = {
   },
   "project-five": {
     id: 5,
-    title: "Mogreet(SaaS - Mobile Marketing)",
+    title: "Mogreet (SaaS - Mobile Marketing)",
     category: "Web · Dev UI/UX Design",
     img: ProjectMogreet,
   },

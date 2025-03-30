@@ -19,7 +19,7 @@ function App() {
       <ScrollToTop />
       <AppHeader />
       <AnimatePresence mode="wait">
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects/:projectId" element={<ProjectSingle />} />
