@@ -85,7 +85,8 @@
 
 .ballContainer {
   width: 200px;
-  margin-top: 110px;
+  height: 20px;
+  margin-top: auto;
   position: relative;
 }
 
@@ -101,7 +102,7 @@
 
 .ballShadow {
   width: 20px;
-  height: 15px;
+  height: 20px;
   background-color: #000;
   border-radius: 50%;
   position: absolute;
