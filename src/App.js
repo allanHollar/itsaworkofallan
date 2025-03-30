@@ -3,9 +3,7 @@ import { lazy, Suspense } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import ScrollToTop from "./components/ScrollToTop";
-import AppFooter from "./components/shared/AppFooter/AppFooter";
 import AppHeader from "./components/shared/AppHeader";
-import AppPreFooter from "./components/shared/AppPreFooter/AppPreFooter";
 import "./css/App.css";
 import "./css/main.css";
 import UseScrollToTop from "./hooks/useScrollToTop";
@@ -26,9 +24,6 @@ function App() {
           </Routes>
         </Suspense>
       </AnimatePresence>
-
-      <AppPreFooter />
-      <AppFooter />
       <UseScrollToTop />
     </Router>
   );

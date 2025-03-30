@@ -7,6 +7,8 @@ import AppBanner from "../components/shared/AppBanner/AppBanner";
 import CoreSkills from "../components/shared/CoreSkills/CoreSkills";
 import HorizontalRule from "../components/shared/HorizontalRule";
 import WorkHistory from "../components/shared/WorkHistory/WorkHistory";
+import AppPreFooter from "../components/shared/AppPreFooter/AppPreFooter";
+import AppFooter from "../components/shared/AppFooter/AppFooter.jsx";
 import ProjectsGrid from "../components/projects/ProjectsGrid";
 
 const Home = () => {
@@ -23,20 +25,19 @@ const Home = () => {
           <AboutMeBio />
         </motion.div>
       </AboutMeProvider>
-
       <ResumeProvider>
         <CoreSkills />
       </ResumeProvider>
       <HorizontalRule />
-
       <ResumeProvider>
         <WorkHistory />
       </ResumeProvider>
       <HorizontalRule />
-
       <ProjectsProvider>
         <ProjectsGrid />
       </ProjectsProvider>
+      <AppPreFooter />
+      <AppFooter />
     </div>
   );
 };
