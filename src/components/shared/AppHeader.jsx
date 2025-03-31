@@ -39,10 +39,10 @@ const AppHeader = () => {
     !isProjectRoute ? "top-0 z-50 fixed" : ""
   } bg-[#f5e8d7] w-full h-[74px]`;
 
-  const shouldShowNavLinks = isProjectRoute ? "hidden" : "flex";
+  const shouldShowNavLinks = isProjectRoute ? "hidden" : "hidden sm:flex";
   const logoAlignment = isProjectRoute
     ? "justify-center w-full"
-    : "justify-between";
+    : "justify-center sm:justify-between w-full sm:w-auto";
 
   return (
     <div className={projectHeaderClasses}>

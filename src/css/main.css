@@ -985,6 +985,10 @@ select {
   width: 100%;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
@@ -1650,6 +1654,14 @@ select {
 
   .sm\:w-3\/4 {
     width: 75%;
+  }
+
+  .sm\:w-full {
+    width: 100%;
+  }
+
+  .sm\:w-auto {
+    width: auto;
   }
 
   .sm\:grid-cols-2 {
