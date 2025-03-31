@@ -1,9 +1,9 @@
-import PorjectClentWork from "../images/project-clients.webp";
-import ProjectFiveBelow from "../images/project-fivebelow.webp";
-import ProjectHollar from "../images/project-hollar.webp";
-import ProjectMasterClass from "../images/project-masterclass.webp";
-import ProjectMogreet from "../images/project-mogreet.webp";
-import ProjectPledgeling from "../images/project-pledgeling.webp";
+import PorjectClentWork from "../images/project-clients-1.webp";
+import ProjectFiveBelow from "../images/project-fivebelow-1.webp";
+import ProjectHollar from "../images/project-hollar-1.webp";
+import ProjectMasterClass from "../images/project-masterclass-1.webp";
+import ProjectMogreet from "../images/project-mogreet-1.webp";
+import ProjectPledgeling from "../images/project-pledgeling-1.webp";
 
 export const projectsData = {
   "project-one": {

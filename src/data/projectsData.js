@@ -1,10 +1,26 @@
-// Import images
+import fiveBelowOne from "../images/project-fivebelow-1.webp";
+import fiveBelowTwo from "../images/project-fivebelow-2.webp";
+import fiveBelowThree from "../images/project-fivebelow-3.webp";
 
-import Image3 from "../images/mobile-project-2.jpg";
-import Image1 from "../images/ui-project-1.jpg";
-import Image2 from "../images/web-project-2.jpg";
+import hollarOne from "../images/project-hollar-1.webp";
+import hollarTwo from "../images/project-hollar-2.webp";
+import hollarThree from "../images/project-hollar-3.webp";
 
-// Import icons
+import masterClassOne from "../images/project-masterclass-1.webp";
+import masterClassTwo from "../images/project-masterclass-2.webp";
+import masterClassThree from "../images/project-masterclass-3.webp";
+
+import pledgelingOne from "../images/project-pledgeling-1.webp";
+import pledgelingTwo from "../images/project-pledgeling-2.webp";
+import pledgelingThree from "../images/project-pledgeling-3.webp";
+
+import mogreetOne from "../images/project-mogreet-1.webp";
+import mogreetThree from "../images/project-mogreet-2.webp";
+import mogreetTwo from "../images/project-mogreet-3.webp";
+
+import clientWorkOne from "../images/project-clients-1.webp";
+import clientWorkTwo from "../images/project-clients-2.webp";
+import clientWorkThree from "../images/project-clients-3.webp";
 
 export const projectsData = {
   "project-one": {
@@ -16,18 +32,18 @@ export const projectsData = {
     projectImages: [
       {
         id: 1,
-        title: "Kabul project Management UI",
-        img: Image1,
+        title: "Five Below desktop and mobile web e-commerce store",
+        img: fiveBelowOne,
       },
       {
         id: 2,
-        title: "Kabul project Management UI",
-        img: Image2,
+        title: "Five Below product page",
+        img: fiveBelowTwo,
       },
       {
         id: 3,
-        title: "Kabul project Management UI",
-        img: Image3,
+        title: "Five Below desktop store locator",
+        img: fiveBelowThree,
       },
     ],
     projectInfo: {
@@ -88,18 +104,18 @@ export const projectsData = {
     projectImages: [
       {
         id: 1,
-        title: "Kabul project Management UI",
-        img: Image1,
+        title: "Hollar desktop and mobile web e-commerce store",
+        img: hollarOne,
       },
       {
         id: 2,
-        title: "Kabul project Management UI",
-        img: Image2,
+        title: "Hollar product listing page",
+        img: hollarTwo,
       },
       {
         id: 3,
-        title: "Kabul project Management UI",
-        img: Image3,
+        title: "Hollar promo web graphic",
+        img: hollarThree,
       },
     ],
     projectInfo: {
@@ -161,18 +177,18 @@ export const projectsData = {
     projectImages: [
       {
         id: 1,
-        title: "Kabul project Management UI",
-        img: Image1,
+        title: "MasterClass web course page",
+        img: masterClassOne,
       },
       {
         id: 2,
-        title: "Kabul project Management UI",
-        img: Image2,
+        title: "MasterClass mobile web experience",
+        img: masterClassTwo,
       },
       {
         id: 3,
-        title: "Kabul project Management UI",
-        img: Image3,
+        title: "MasterClass checkout page",
+        img: masterClassThree,
       },
     ],
     projectInfo: {
@@ -227,18 +243,18 @@ export const projectsData = {
     projectImages: [
       {
         id: 1,
-        title: "Kabul project Management UI",
-        img: Image1,
+        title: "Pledgeling fundraising page and partnering with evite",
+        img: pledgelingOne,
       },
       {
         id: 2,
-        title: "Kabul project Management UI",
-        img: Image2,
+        title: "Pledgeling landing page for fundraisers",
+        img: pledgelingTwo,
       },
       {
         id: 3,
-        title: "Kabul project Management UI",
-        img: Image3,
+        title: "Pledgeling landing page for fundraisers",
+        img: pledgelingThree,
       },
     ],
     projectInfo: {
@@ -292,18 +308,18 @@ export const projectsData = {
     projectImages: [
       {
         id: 1,
-        title: "Kabul project Management UI",
-        img: Image1,
+        title: "Mogreet and Outspoken web experiences",
+        img: mogreetOne,
       },
       {
         id: 2,
-        title: "Kabul project Management UI",
-        img: Image2,
+        title: "Mogreet Enterprise and Mogreet Express mobile web experience",
+        img: mogreetTwo,
       },
       {
         id: 3,
-        title: "Kabul project Management UI",
-        img: Image3,
+        title: "Outspoken web experience",
+        img: mogreetThree,
       },
     ],
     projectInfo: {
@@ -363,18 +379,18 @@ export const projectsData = {
     projectImages: [
       {
         id: 1,
-        title: "Kabul project Management UI",
-        img: Image1,
+        title: "Various client work",
+        img: clientWorkOne,
       },
       {
         id: 2,
         title: "Kabul project Management UI",
-        img: Image2,
+        img: clientWorkTwo,
       },
       {
         id: 3,
         title: "Kabul project Management UI",
-        img: Image3,
+        img: clientWorkThree,
       },
     ],
     projectInfo: {

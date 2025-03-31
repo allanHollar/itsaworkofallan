@@ -17,7 +17,7 @@
   position: absolute;
   display: block;
   left: 0;
-  top: 0;
+  top: -5px;
   transform: translateY(-10%);
   width: 0.8vw;
   height: 0.4vw;
@@ -26,8 +26,7 @@
   pointer-events: none;
 }
 
-/* add animation */
-.sakura span:nth-child(2n + 1) {
+add animation .sakura span:nth-child(2n + 1) {
   animation: sakura-anim-1 10s 0s linear infinite;
 }
 

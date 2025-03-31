@@ -1,19 +1,26 @@
+// External libraries
 import { motion } from "framer-motion";
+
+// Context Providers
 import { AboutMeProvider } from "../context/AboutMeContext";
 import { ResumeProvider } from "../context/ResumeContext";
 import { ProjectsProvider } from "../context/ProjectsContext";
-import AboutMeBio from "../components/about/AboutMeBio";
+
+// Page Sections / Components
 import AppBanner from "../components/shared/AppBanner/AppBanner";
+import AboutMeBio from "../components/about/AboutMeBio";
 import CoreSkills from "../components/shared/CoreSkills/CoreSkills";
-import HorizontalRule from "../components/shared/HorizontalRule";
 import WorkHistory from "../components/shared/WorkHistory/WorkHistory";
+import ProjectsGrid from "../components/projects/ProjectsGrid";
+
+// Layout / Utility Components
+import HorizontalRule from "../components/shared/HorizontalRule";
 import AppPreFooter from "../components/shared/AppPreFooter/AppPreFooter";
 import AppFooter from "../components/shared/AppFooter/AppFooter.jsx";
-import ProjectsGrid from "../components/projects/ProjectsGrid";
 
 const Home = () => {
   return (
-    <div className="w-full">
+    <div className="top-0 pt-[74px] w-full">
       <AppBanner />
       <AboutMeProvider>
         <motion.div

@@ -21,7 +21,8 @@ const ProjectsGrid = () => {
           className="block mx-auto mb-5"
           src={HappyNinja}
           alt="Happy Ninja"
-          width="100"
+          width={100}
+          height={100}
         />
       </div>
 

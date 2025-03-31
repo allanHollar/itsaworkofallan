@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
-import { useParams } from "react-router-dom"; // Import useParams
+import { useParams } from "react-router-dom";
 import ProjectGallery from "../components/projects/ProjectGallery";
 import ProjectHeader from "../components/projects/ProjectHeader";
 import ProjectInfo from "../components/projects/ProjectInfo";
 import { SingleProjectProvider } from "../context/SingleProjectContext";
+import AppPreFooter from "../components/shared/AppPreFooter/AppPreFooter";
+import AppFooter from "../components/shared/AppFooter/AppFooter.jsx";
 
 const ProjectSingle = () => {
   const { projectId } = useParams();
@@ -17,13 +19,16 @@ const ProjectSingle = () => {
         duration: 0.6,
         delay: 0.15,
       }}
-      className="mx-auto mt-5 sm:mt-10 mb-10 container"
+      className="mx-auto mt-5 sm:mt-10"
     >
       <SingleProjectProvider>
         <ProjectHeader projectId={projectId} />
         <ProjectGallery projectId={projectId} />
         <ProjectInfo projectId={projectId} />
       </SingleProjectProvider>
+
+      <AppPreFooter />
+      <AppFooter />
     </motion.div>
   );
 };

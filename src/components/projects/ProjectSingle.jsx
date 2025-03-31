@@ -16,9 +16,9 @@ const ProjectSingle = ({ title, category, image }) => {
           <img
             src={image}
             className="border-none"
-            alt="Single Project"
-            width={261}
-            height={324}
+            alt={`Project of - ${title}`}
+            width={336}
+            height={293}
           />
         </div>
         <div className="px-4 py-6 text-center">

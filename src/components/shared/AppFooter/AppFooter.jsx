@@ -38,13 +38,7 @@ const AppFooter = () => {
       </p>
       <div className="z-10 items-end mx-auto container">
         <div className="opacity-95 mx-auto mt-5 border-8 border-white rounded-full w-40 h-40 overflow-hidden">
-          <img
-            src={profileImage}
-            className="w-full h-full object-cover"
-            alt=""
-            width={144}
-            height={144}
-          />
+          <img src={profileImage} alt="" width={144} height={144} />
         </div>
 
         <div className="social-overlap process-scetion mt100">
