@@ -30,7 +30,11 @@ const ProjectsGrid = () => {
         {Object.keys(projects).map((projectId) => {
           const project = projects[projectId];
           return (
-            <Link to={`/projects/${projectId}`} key={projectId}>
+            <Link
+              to={`/projects/${projectId}`}
+              key={projectId}
+              className="mb-10 sm:mb-0 last:mb-0"
+            >
               <ProjectSingle
                 title={project.title}
                 category={project.category}

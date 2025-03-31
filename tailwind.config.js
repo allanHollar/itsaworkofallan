@@ -12,6 +12,14 @@ module.exports = {
   darkMode: "class", // Enables dark mode support
   theme: {
     extend: {
+      backgroundImage: {
+        "hero-image": "url('/src/images/hero.webp')",
+        "hero-image-mobile": "url('/src/images/hero-mobile.webp')",
+        "footer-image": "url('/src/images/footer.webp')",
+      },
+      boxShadow: {
+        "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
+      },
       colors: {
         "primary-light": "#F7F8FC",
         "secondary-light": "#FFFFFF",
@@ -19,9 +27,6 @@ module.exports = {
         "primary-dark": "#0D2438",
         "secondary-dark": "#102D44",
         "ternary-dark": "#1E3851",
-      },
-      boxShadow: {
-        "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
       },
       container: {
         padding: {

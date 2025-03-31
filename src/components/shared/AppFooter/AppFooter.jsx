@@ -23,11 +23,10 @@ const AppFooter = () => {
   return (
     <div
       id="connect"
-      className="relative flex flex-col justify-end bg-cover bg-no-repeat mt-0 pt-5 h-[700px]"
-      style={{ backgroundImage: `url(${FooterImage})` }}
+      className="relative flex flex-col justify-end bg-footer-image bg-cover bg-no-repeat mt-0 pt-5 h-[700px]"
     >
       <p
-        className="font-semibold text-3xl text-center text-white leading-tight happy-monkey-regular [font-size-adjust:0.46]"
+        className="font-semibold text-2xl text-center text-white sm:text-3xl leading-tight happy-monkey-regular [font-size-adjust:0.46]"
         style={{
           textShadow: "rgba(0, 0, 0, 0.75) .05em .05em 3px",
           fontSizeAdjust: 0.5,

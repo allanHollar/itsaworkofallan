@@ -40,18 +40,16 @@ const CoreSkills = () => {
   return (
     <div
       id="core-skills"
-      className="flex sm:flex-row flex-col sm:gap-3 mx-auto pt-20 pb-0 container"
+      className="flex sm:flex-row flex-col sm:gap-3 mx-auto py-10 sm:pt-20 container"
     >
-      <div className="w-1/4">
-        <h3 className="mb-5 font-semibold text-[24px] tracking-wide">
-          <span className="border-[#efd5b4] border-b-4 text-[#5A5A5A] happy-monkey-regular">
-            Core Skills
-          </span>
+      <div className="w-full sm:w-1/4">
+        <h3 className="mb-5 font-semibold text-[#5A5A5A] text-3xl text-center sm:text-[24px] sm:text-left tracking-wide happy-monkey-regular">
+          <span className="border-[#efd5b4] border-b-4">Core Skills</span>
         </h3>
         <CuteDog />
       </div>
 
-      <div className="pb-12 w-3/4">
+      <div className="pb-3 sm:pb-5 w-full sm:w-3/4">
         <div className="flex justify-center items-center mb-10">
           <ul className="w-full">
             {resume.languages.map((resumeItem) => (

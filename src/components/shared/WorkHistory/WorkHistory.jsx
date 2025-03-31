@@ -8,18 +8,20 @@ const WorkHistory = () => {
   return (
     <div
       id="work-history"
-      className="flex sm:flex-row flex-col sm:gap-3 mx-auto pt-20 pb-0 container"
+      className="flex sm:flex-row flex-col justify-center sm:justify-start sm:gap-3 mx-auto mb-5 pt-10 sm:pt-20 pb-0 container"
     >
-      <div className="w-1/4">
-        <h3 className="mb-28 font-semibold text-[#5A5A5A] text-2xl tracking-wide happy-monkey-regular">
+      <div className="mb-5 sm:mb-0 w-full sm:w-1/4">
+        <h3 className="mb-5 font-semibold text-[#5A5A5A] text-3xl text-center sm:text-[24px] sm:text-left tracking-wide happy-monkey-regular">
           <span className="border-[#efd5b4] border-b-4">Work History</span>
         </h3>
-        <CoffeeCup />
+        <div className="flex justify-center sm:justify-start">
+          <CoffeeCup />
+        </div>
       </div>
 
-      <div className="pb-12 w-3/4">
+      <div className="pb-3 sm:pb-5 w-full sm:w-3/4">
         {resume.workHistory.map((workItem, index) => (
-          <div key={index} className="mb-10 leading-relaxed">
+          <div key={index} className="mb-5 leading-relaxed">
             <h4 className="font-semibold text-xl tracking-wide">
               {workItem.company}
             </h4>
@@ -28,7 +30,7 @@ const WorkHistory = () => {
               {workItem.jobTitle} - {workItem.tenure}
             </p>
 
-            <ul className="mb-10 ml-3 list-disc">
+            <ul className="mb-7 ml-3 list-disc">
               {workItem.responsibilities.map((responsibility, index) => (
                 <li key={index} className="mb-3">
                   {responsibility}

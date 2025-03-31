@@ -104,8 +104,8 @@ export const resumeData = {
   technologiesAndTools: [
     // Technologies
     "A/B Testing",
-    "Accessibility Standards (ADA Compliance)",
     "AWS",
+    "Accessibility Standards (ADA Compliance)",
     "Bootstrap",
     "CSS",
     "Digital Asset Management",

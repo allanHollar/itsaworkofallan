@@ -3,7 +3,7 @@ import styles from "./CuteDog.module.scss";
 
 const CuteDog = () => {
   return (
-    <div className={styles.dogContainer}>
+    <div className={`justify-center sm:justify-start ${styles.dogContainer}`}>
       <div className={styles.dog}>
         <div className={`${styles.dogEars} ${styles.earsLeft}`}></div>
         <div className={`${styles.dogEars} ${styles.earsRight}`}></div>

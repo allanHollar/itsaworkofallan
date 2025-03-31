@@ -35,17 +35,13 @@ const AppHeader = () => {
   const { pathname } = useLocation();
   const isProjectRoute = pathname.includes("projects");
 
-  const projectHeaderClasses = `${
-    !isProjectRoute ? "top-0 z-50 fixed" : ""
-  } bg-[#f5e8d7] w-full h-[74px]`;
-
   const shouldShowNavLinks = isProjectRoute ? "hidden" : "hidden sm:flex";
   const logoAlignment = isProjectRoute
     ? "justify-center w-full"
     : "justify-center sm:justify-between w-full sm:w-auto";
 
   return (
-    <div className={projectHeaderClasses}>
+    <div className="top-0 z-50 fixed bg-[#f5e8d7] shadow-md border-t-[5px] border-black border-solid w-full h-[74px]">
       <motion.nav
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

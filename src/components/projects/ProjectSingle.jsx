@@ -11,17 +11,15 @@ const ProjectSingle = ({ title, category, image }) => {
         delay: 0.15,
       }}
     >
-      <div className="bg-secondary-light dark:bg-ternary-dark shadow-md hover:shadow-xl mb-10 sm:mb-0 transition-all cursor-pointer">
+      <div className="shadow-md hover:shadow-xl transition-all cursor-pointer">
         <div>
           <img
             src={image}
             className="border-none"
             alt={`Project of - ${title}`}
-            width={336}
-            height={293}
           />
         </div>
-        <div className="px-4 py-6 text-center">
+        <div className="px-4 py-6 text-base text-center sm:text-sm">
           <p>{title}</p>
           <span>{category}</span>
         </div>
