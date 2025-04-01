@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import AppFooterCopyright from "../AppFooterCopyright";
-import FooterImage from "../../../images/footer.webp";
 import profileImage from "../../../images/ar-anime-profile.webp";
 import Sakura from "../../reusable/Sakura/Sakura";
 import "./social.css";
