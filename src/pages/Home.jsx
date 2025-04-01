@@ -62,19 +62,6 @@ const Home = () => {
           name="twitter:image"
           content="https://itsaworkofallan.me/og-image.jpg"
         />
-        {/* Google Analytics */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-Z9MGEE3QZ8"
-        ></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-Z9MGEE3QZ8');
-          `}
-        </script>
       </Helmet>
 
       <AppBanner />
