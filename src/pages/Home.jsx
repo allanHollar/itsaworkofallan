@@ -1,5 +1,6 @@
 // External libraries
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 
 // Context Providers
 import { AboutMeProvider } from "../context/AboutMeContext";
@@ -21,6 +22,61 @@ import AppFooter from "../components/shared/AppFooter/AppFooter.jsx";
 const Home = () => {
   return (
     <div className="top-0 pt-[74px] w-full">
+      <Helmet>
+        <title>It's a Work of Allan</title>
+        <meta
+          name="description"
+          content="Senior Frontend Engineer & UX/UI Enthusiast – Portfolio of Allan Ritumban"
+        />
+        <meta
+          name="keywords"
+          content="Frontend Engineer, UX/UI, Allan Ritumban, React, Portfolio"
+        />
+        <meta name="author" content="Allan Ritumban" />
+
+        {/* Open Graph (social sharing) */}
+        <meta property="og:title" content="It's a Work of Allan" />
+        <meta
+          property="og:description"
+          content="Senior Frontend Engineer & UX/UI Enthusiast – Portfolio of Allan Ritumban"
+        />
+        <meta
+          property="og:image"
+          content="https://itsaworkofallan.me/og-image.jpg"
+        />
+        <meta property="og:url" content="https://itsaworkofallan.me" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="It's a Work of Allan" />
+        <meta
+          name="twitter:image"
+          content="https://itsaworkofallan.me/og-image.jpg"
+        />
+        <meta
+          name="twitter:description"
+          content="Senior Frontend Engineer & UX/UI Enthusiast – Portfolio of Allan Ritumban"
+        />
+        <meta
+          name="twitter:image"
+          content="https://itsaworkofallan.me/og-image.jpg"
+        />
+        {/* Google Analytics */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-Z9MGEE3QZ8"
+        ></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-Z9MGEE3QZ8');
+          `}
+        </script>
+      </Helmet>
+
       <AppBanner />
       <AboutMeProvider>
         <motion.div
