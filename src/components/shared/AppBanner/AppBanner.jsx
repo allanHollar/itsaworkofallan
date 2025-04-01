@@ -43,7 +43,7 @@ const AppBanner = () => {
             duration: 0.9,
             delay: 0.1,
           }}
-          className="drop-shadow-md mt-[-30px] sm:mt-[-100px] text-5xl text-center text-white md:text-7xl dark:text-primary-light happy-monkey-regular"
+          className="drop-shadow-md mt-[-30px] sm:mt-[-100px] text-5xl text-center text-white md:text-7xl happy-monkey-regular"
           style={{ textShadow: "rgba(0, 0, 0, 0.75) .05em .05em 4px" }}
         >
           Hello, I'm Allan

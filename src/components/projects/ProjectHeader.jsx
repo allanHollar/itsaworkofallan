@@ -15,7 +15,7 @@ const ProjectSingleHeader = ({ projectId }) => {
         </span>
       </h2>
       <div className="flex">
-        <div className="flex items-center mr-10">
+        <div className="flex items-center mr-5">
           <span>⏳ {projectData.projectHeader.tenure}</span>
         </div>
 
