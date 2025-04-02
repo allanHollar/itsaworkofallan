@@ -6,6 +6,8 @@
   contain: layout style;
   will-change: transform;
   overflow: hidden;
+  height: 100%;
+  contain-intrinsic-size: 100vh;
 }
 
 .sakura-container img {

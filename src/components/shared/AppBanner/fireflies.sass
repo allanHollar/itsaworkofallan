@@ -1,6 +1,6 @@
 @use "sass:math"
 
-$quantity: 75
+$quantity: 25
 
 .firefly
   position: absolute
@@ -9,8 +9,9 @@ $quantity: 75
   width: min(1.2vw, 3px)
   height: min(1.2vw, 3px)
   margin: -0.2vw 0 0 9.8vw
-  animation: move ease-in-out 500s alternate infinite
+  animation: move ease-in-out 600s alternate infinite
   pointer-events: none
+  background: transparent
 
   &::before,
   &::after
@@ -27,7 +28,7 @@ $quantity: 75
     animation: drift linear infinite
 
   &::after
-    background: rgba(255, 255, 255, 0.75)
+    background: rgba(255, 255, 255, 0.5)
     opacity: 1
     box-shadow: 0 0 0vw 0vw yellow
     animation: drift linear infinite, flash ease infinite
@@ -65,7 +66,7 @@ $quantity: 75
 
 @keyframes flash
   0%, 30%, 100%
-    opacity: 0
+    opacity: 0.25
     box-shadow: 0 0 0vw 0vw yellow
   5%
     opacity: 1

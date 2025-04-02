@@ -8,23 +8,21 @@ const AppBanner = () => {
 
   useEffect(() => {
     const fireflyElements = [];
-    for (let i = 0; i < 75; i++) {
-      setTimeout(() => {
-        fireflyElements.push(
-          <motion.div
-            key={i}
-            className="firefly"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-              ease: "easeInOut",
-              duration: 0.5,
-              delay: Math.random() * 3, // Random delay between 0 and 3 seconds
-            }}
-          ></motion.div>
-        );
-        setFireflies([...fireflyElements]); // Update the state with each new firefly
-      }, i * 50); // Delay each firefly creation by 50ms
+    for (let i = 0; i < 25; i++) {
+      fireflyElements.push(
+        <motion.div
+          key={i}
+          className="firefly"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            ease: "easeInOut",
+            duration: 0.5,
+            delay: Math.random() * 3, // Random delay between 0 and 3 seconds
+          }}
+        ></motion.div>
+      );
+      setFireflies([...fireflyElements]); // Update the state with each new firefly
     }
   }, []);
 
