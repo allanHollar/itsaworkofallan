@@ -18,3 +18,8 @@ export interface WorkExperience {
   tenure: string;
   responsibilities: string[];
 }
+
+export interface AboutMeItem {
+  id: number;
+  bio: string;
+}

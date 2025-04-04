@@ -1,10 +1,8 @@
-import { useContext } from "react";
-
-import AboutMeContext from "../../context/AboutMeContext";
+import { useAboutMe } from "../../context/AboutMeContext";
 import profileImage from "../../images/ar-profile.webp";
 
 const AboutMeBio = () => {
-  const { aboutMe } = useContext(AboutMeContext);
+  const { aboutMe } = useAboutMe();
 
   return (
     <div
