@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import "./fireflies.sass";
 
 const AppBanner = () => {
-  const [fireflies, setFireflies] = useState([]);
+  const [fireflies, setFireflies] = useState<React.ReactNode>([]);
 
   useEffect(() => {
     const fireflyElements = [];
