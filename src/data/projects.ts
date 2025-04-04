@@ -5,13 +5,15 @@ import ProjectMasterClass from "../images/project-masterclass-1.webp";
 import ProjectMogreet from "../images/project-mogreet-1.webp";
 import ProjectPledgeling from "../images/project-pledgeling-1.webp";
 
-export const projectsData = {
+import { ProjectData } from "../types/types";
+
+export const projectsData: ProjectData = {
   "project-one": {
     id: 1,
     title: "Five Below (e-commerce)",
     category: "Web Dev",
     img: ProjectFiveBelow,
-    ProjectHeader: {
+    projectHeader: {
       title: "Five Below (e-commerce)",
       publishDate: "Jul 26, 2021",
       tags: "UI / Frontend",

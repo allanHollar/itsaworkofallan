@@ -956,10 +956,6 @@ select {
   flex-direction: column;
 }
 
-.flex-col-reverse {
-  flex-direction: column-reverse;
-}
-
 .items-end {
   align-items: flex-end;
 }
@@ -1493,20 +1489,7 @@ select {
 }
 
 @media (min-width: 1024px) {
-  .lg\:mt-10 {
-    margin-top: 2.5rem;
-  }
-
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .lg\:flex-row {
-    flex-direction: row;
-  }
-
-  .lg\:py-10 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
   }
 }
