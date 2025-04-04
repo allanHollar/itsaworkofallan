@@ -1,30 +1,16 @@
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useMemo } from "react";
 
 import "./fireflies.sass";
 
 const AppBanner = () => {
-  const [fireflies, setFireflies] = useState<React.ReactNode>([]);
-
-  useEffect(() => {
-    const fireflyElements = [];
-    for (let i = 0; i < 25; i++) {
-      fireflyElements.push(
-        <motion.div
-          key={i}
-          className="firefly"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            ease: "easeInOut",
-            duration: 0.5,
-            delay: Math.random() * 3, // Random delay between 0 and 3 seconds
-          }}
-        ></motion.div>
-      );
-      setFireflies([...fireflyElements]); // Update the state with each new firefly
-    }
-  }, []);
+  const fireflies = useMemo(
+    () =>
+      Array.from({ length: 25 }, (_, i) => (
+        <span key={i} className="firefly" />
+      )),
+    []
+  );
 
   return (
     <motion.section

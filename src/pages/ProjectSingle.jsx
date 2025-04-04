@@ -5,7 +5,7 @@ import ProjectHeader from "../components/projects/ProjectHeader";
 import ProjectInfo from "../components/projects/ProjectInfo";
 import { SingleProjectProvider } from "../context/SingleProjectContext";
 import AppPreFooter from "../components/shared/AppPreFooter/AppPreFooter";
-import AppFooter from "../components/shared/AppFooter/AppFooter.jsx";
+import AppFooter from "../components/shared/AppFooter/AppFooter";
 
 const ProjectSingle = () => {
   const { projectId } = useParams();

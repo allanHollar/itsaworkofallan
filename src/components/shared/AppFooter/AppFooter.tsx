@@ -5,7 +5,13 @@ import profileImage from "../../../images/ar-anime-profile.webp";
 import Sakura from "../../reusable/Sakura/Sakura";
 import "./social.css";
 
-const socialLinks = [
+interface SocialLink {
+  id: number;
+  icon: JSX.Element;
+  url: string;
+}
+
+const socialLinks: SocialLink[] = [
   {
     id: 1,
     icon: <FontAwesomeIcon icon={faLinkedin} className="text-blue-500 ikon" />,

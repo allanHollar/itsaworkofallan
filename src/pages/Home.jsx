@@ -17,7 +17,7 @@ import ProjectsGrid from "../components/projects/ProjectsGrid";
 // Layout / Utility Components
 import HorizontalRule from "../components/shared/HorizontalRule";
 import AppPreFooter from "../components/shared/AppPreFooter/AppPreFooter";
-import AppFooter from "../components/shared/AppFooter/AppFooter.jsx";
+import AppFooter from "../components/shared/AppFooter/AppFooter";
 
 const Home = () => {
   return (
