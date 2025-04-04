@@ -1,9 +1,8 @@
-import { useContext } from "react";
-import ResumeContext from "../../../context/ResumeContext";
+import { useREsumeContext } from "../../../context/ResumeContext";
 import CoffeeCup from "../../reusable/CoffeeCup/CoffeeCup";
 
 const WorkHistory = () => {
-  const { resume } = useContext(ResumeContext);
+  const { resume } = useREsumeContext();
 
   return (
     <div

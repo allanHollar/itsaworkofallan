@@ -1,7 +1,7 @@
 import ProgressBar from "@ramonak/react-progress-bar";
-import { useContext, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import ResumeContext from "../../../context/ResumeContext";
+import { useREsumeContext } from "../../../context/ResumeContext";
 import CuteDog from "../../reusable/CuteDog/CuteDog";
 import { ResumeItem } from "../../../types/types";
 
@@ -36,7 +36,7 @@ const AnimatedProgressBar = ({ resume }: { resume: ResumeItem }) => {
 };
 
 const CoreSkills = () => {
-  const { resume } = useContext(ResumeContext);
+  const { resume } = useREsumeContext();
 
   return (
     <div

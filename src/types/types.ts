@@ -9,4 +9,12 @@ export interface Resume {
   languages: ResumeItem[];
   technologiesAndTools: string[];
   softSkills: string[];
+  workHistory: WorkExperience[];
+}
+
+export interface WorkExperience {
+  company: string;
+  jobTitle: string;
+  tenure: string;
+  responsibilities: string[];
 }
