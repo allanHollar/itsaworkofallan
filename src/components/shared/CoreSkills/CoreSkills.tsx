@@ -3,8 +3,9 @@ import { useContext, useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import ResumeContext from "../../../context/ResumeContext";
 import CuteDog from "../../reusable/CuteDog/CuteDog";
+import { ResumeItem } from "../../../types/types";
 
-const AnimatedProgressBar = ({ resume }) => {
+const AnimatedProgressBar = ({ resume }: { resume: ResumeItem }) => {
   const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: true,
@@ -23,9 +24,9 @@ const AnimatedProgressBar = ({ resume }) => {
       <ProgressBar
         baseBgColor="#f5e8d7"
         bgColor={resume.bgColor}
-        borderRadius={0}
+        borderRadius="0"
         completed={animatedCompleted}
-        height={45}
+        height="45"
         isLabelVisible={false}
         width="97%"
         transitionDuration="2s"
@@ -52,7 +53,7 @@ const CoreSkills = () => {
       <div className="pb-3 sm:pb-5 w-full sm:w-3/4">
         <div className="flex justify-center items-center mb-10">
           <ul className="w-full">
-            {resume.languages.map((resumeItem) => (
+            {resume.languages.map((resumeItem: ResumeItem) => (
               <li key={resumeItem.id}>
                 <p className="mb-2 font-semibold text-[16px]">
                   {resumeItem.title}
@@ -67,17 +68,19 @@ const CoreSkills = () => {
           <li className="inline-block mr-1 underline">
             Technologies and Tools:&nbsp;
           </li>
-          {resume.technologiesAndTools.map((techTool, index) => (
-            <li className="inline-block" key={index}>
-              {techTool}
-              {index < resume.technologiesAndTools.length - 1 && ",\u00A0"}
-            </li>
-          ))}
+          {resume.technologiesAndTools.map(
+            (techTool: string, index: number) => (
+              <li className="inline-block" key={index}>
+                {techTool}
+                {index < resume.technologiesAndTools.length - 1 && ",\u00A0"}
+              </li>
+            )
+          )}
         </ul>
 
         <ul className="block leading-relaxed">
           <li className="inline-block mr-1 underline">Soft Skills:&nbsp;</li>
-          {resume.softSkills.map((friendlySkills, index) => (
+          {resume.softSkills.map((friendlySkills: string, index: number) => (
             <li className="inline-block" key={index}>
               {friendlySkills}
               {index < resume.softSkills.length - 1 && ",\u00A0"}
