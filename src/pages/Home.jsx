@@ -75,17 +75,21 @@ const Home = () => {
           <AboutMeBio />
         </motion.div>
       </AboutMeProvider>
+
       <ResumeProvider>
         <CoreSkills />
       </ResumeProvider>
       <HorizontalRule />
+
       <ResumeProvider>
         <WorkHistory />
       </ResumeProvider>
       <HorizontalRule />
+
       <ProjectsProvider>
         <ProjectsGrid />
       </ProjectsProvider>
+
       <AppPreFooter />
       <AppFooter />
     </div>

@@ -1,11 +1,11 @@
+import { ProjectData } from "../types/types";
+
 import PorjectClentWork from "../images/project-clients-1.webp";
 import ProjectFiveBelow from "../images/project-fivebelow-1.webp";
 import ProjectHollar from "../images/project-hollar-1.webp";
 import ProjectMasterClass from "../images/project-masterclass-1.webp";
 import ProjectMogreet from "../images/project-mogreet-1.webp";
 import ProjectPledgeling from "../images/project-pledgeling-1.webp";
-
-import { ProjectData } from "../types/types";
 
 export const projectsData: ProjectData = {
   "project-one": {

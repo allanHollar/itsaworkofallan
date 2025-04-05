@@ -3,9 +3,9 @@ import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { useREsumeContext } from "../../../context/ResumeContext";
 import CuteDog from "../../reusable/CuteDog/CuteDog";
-import { ResumeItem } from "../../../types/types";
+import { LanguageItem } from "../../../types/types";
 
-const AnimatedProgressBar = ({ resume }: { resume: ResumeItem }) => {
+const AnimatedProgressBar = ({ resume }: { resume: LanguageItem }) => {
   const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: true,
@@ -53,7 +53,7 @@ const CoreSkills = () => {
       <div className="pb-3 sm:pb-5 w-full sm:w-3/4">
         <div className="flex justify-center items-center mb-10">
           <ul className="w-full">
-            {resume.languages.map((resumeItem: ResumeItem) => (
+            {resume.languages.map((resumeItem: LanguageItem) => (
               <li key={resumeItem.id}>
                 <p className="mb-2 font-semibold text-[16px]">
                   {resumeItem.title}

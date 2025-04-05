@@ -1,3 +1,5 @@
+import { ProjectFullDetails } from "../types/types";
+
 import fiveBelowOne from "../images/project-fivebelow-1.webp";
 import fiveBelowTwo from "../images/project-fivebelow-2.webp";
 import fiveBelowThree from "../images/project-fivebelow-3.webp";
@@ -22,7 +24,7 @@ import clientWorkOne from "../images/project-clients-1.webp";
 import clientWorkTwo from "../images/project-clients-2.webp";
 import clientWorkThree from "../images/project-clients-3.webp";
 
-export const projectsData = {
+export const projectsData: ProjectFullDetails = {
   "project-one": {
     projectHeader: {
       title: "Five Below",
@@ -80,7 +82,7 @@ export const projectsData = {
           ],
         },
       ],
-      projectDetailsHeading: "The Journey",
+      projectDetailsHeader: "The Journey",
       projectDetails: [
         {
           id: 1,
@@ -153,7 +155,7 @@ export const projectsData = {
           ],
         },
       ],
-      projectDetailsHeading: "The Journey",
+      projectDetailsHeader: "The Journey",
       projectDetails: [
         {
           id: 1,
@@ -224,7 +226,7 @@ export const projectsData = {
           ],
         },
       ],
-      projectDetailsHeading: "The Journey",
+      projectDetailsHeader: "The Journey",
       projectDetails: [
         {
           id: 1,
@@ -284,7 +286,7 @@ export const projectsData = {
           techs: ["HTML", "CSS", "JavaScript", "Ruby on Rails", "Bootstrap"],
         },
       ],
-      projectDetailsHeading: "The Journey",
+      projectDetailsHeader: "The Journey",
       projectDetails: [
         {
           id: 1,
@@ -350,7 +352,7 @@ export const projectsData = {
           ],
         },
       ],
-      projectDetailsHeading: "The Journey",
+      projectDetailsHeader: "The Journey",
       projectDetails: [
         {
           id: 1,
@@ -421,7 +423,7 @@ export const projectsData = {
           ],
         },
       ],
-      projectDetailsHeading: "The Journey",
+      projectDetailsHeader: "The Journey",
       projectDetails: [
         {
           id: 1,

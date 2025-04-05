@@ -47,7 +47,7 @@ const ProjectInfo = ({ projectId }) => {
         {/*  Single project right section */}
         <div className="mt-10 sm:mt-0 w-full sm:w-2/3 text-left">
           <h3 className="mb-5 text-xl tracking-wide">
-            {projectData.projectInfo.projectDetailsHeading}
+            {projectData.projectInfo.projectDetailsHeader}
           </h3>
           {projectData.projectInfo.projectDetails.map((details) => {
             return (

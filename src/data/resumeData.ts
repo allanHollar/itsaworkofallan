@@ -1,4 +1,6 @@
-export const resumeData = {
+import { CoreSkills } from "../types/types";
+
+export const resumeData: CoreSkills = {
   languages: [
     {
       bgColor: "#A59D84",
