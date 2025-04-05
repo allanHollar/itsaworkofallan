@@ -1,4 +1,5 @@
 declare module "react-scroll";
+declare module "react-helmet";
 declare module "*.webp" {
   const value: string;
   export default value;

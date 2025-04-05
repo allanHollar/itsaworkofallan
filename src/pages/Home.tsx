@@ -68,7 +68,7 @@ const Home = () => {
       <AboutMeProvider>
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1, delay: 1 }}
+          animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           className="bg-[#1B1212] w-full"
         >

@@ -7,7 +7,7 @@ import "./css/App.css";
 import "./css/main.css";
 
 const Home = lazy(() => import("./pages/Home"));
-const ProjectSingle = lazy(() => import("./pages/ProjectSingle.jsx"));
+const ProjectSingle = lazy(() => import("./pages/ProjectSingle"));
 
 function App() {
   return (
