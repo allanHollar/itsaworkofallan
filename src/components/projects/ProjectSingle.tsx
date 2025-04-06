@@ -12,7 +12,7 @@ const ProjectSingle: FC<ProjectSingleProps> = ({ title, category, image }) => {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      whileHover={{ scale: 1.03 }}
+      whileHover={{ scale: 1.1 }}
       transition={{
         ease: "easeInOut",
         duration: 0.3,

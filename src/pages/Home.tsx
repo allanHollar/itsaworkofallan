@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <div className="top-0 pt-[74px] w-full">
       <Helmet>
-        <title>It's a Work of Allan</title>
+        <title>It's a work of Allan! 🙂</title>
         <meta
           name="description"
           content="Senior Frontend Engineer & UX/UI Enthusiast – Portfolio of Allan Ritumban"
