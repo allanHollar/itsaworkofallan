@@ -1,4 +1,4 @@
-import { useState, createContext, ReactNode } from "react";
+import { useState, useContext, createContext, ReactNode } from "react";
 import { projectsData } from "../data/projects";
 import { ProjectData } from "../types/types";
 
@@ -21,3 +21,13 @@ export const ProjectsProvider = ({ children }: ProjectsProviderProps) => {
     </ProjectsContext.Provider>
   );
 };
+
+export const useProjects = (): ProjectsContextType => {
+  const context = useContext(ProjectsContext);
+  if (!context) {
+    throw new Error("useProjects must be used within a ProjectsProvider");
+  }
+  return context;
+};
+
+export default ProjectsContext;

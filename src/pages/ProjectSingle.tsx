@@ -10,6 +10,10 @@ import AppFooter from "../components/shared/AppFooter/AppFooter";
 const ProjectSingle = () => {
   const { projectId } = useParams();
 
+  if (!projectId) {
+    return <div>Project not found</div>;
+  }
+
   return (
     <motion.div
       initial={{ opacity: 0 }}

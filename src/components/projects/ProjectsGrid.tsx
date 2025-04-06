@@ -1,11 +1,12 @@
-import { useContext } from "react";
-import { ProjectsContext } from "../../context/ProjectsContext";
+import { FC } from "react";
+import { useProjects } from "../../context/ProjectsContext";
 import { Link } from "react-router-dom";
 import ProjectSingle from "./ProjectSingle";
 import HappyNinja from "../../images/happy-ninja.webp";
+import { Project } from "../../types/types";
 
-const ProjectsGrid = () => {
-  const { projects } = useContext(ProjectsContext);
+const ProjectsGrid: FC = () => {
+  const { projects } = useProjects();
 
   return (
     <section
@@ -27,8 +28,8 @@ const ProjectsGrid = () => {
       </div>
 
       <div className="sm:gap-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 mb-5">
-        {Object.keys(projects).map((projectId) => {
-          const project = projects[projectId];
+        {Object.keys(projects).map((projectId: keyof typeof projects) => {
+          const projectData = projects[projectId];
           return (
             <Link
               to={`/projects/${projectId}`}
@@ -36,9 +37,9 @@ const ProjectsGrid = () => {
               className="mb-10 sm:mb-0 last:mb-0"
             >
               <ProjectSingle
-                title={project.title}
-                category={project.category}
-                image={project.img}
+                title={projectData.title}
+                category={projectData.category}
+                image={projectData.img}
               />
             </Link>
           );

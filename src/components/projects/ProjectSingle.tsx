@@ -1,14 +1,21 @@
+import { FC } from "react";
 import { motion } from "framer-motion";
 
-const ProjectSingle = ({ title, category, image }) => {
+interface ProjectSingleProps {
+  title: string;
+  category: string;
+  image: string;
+}
+
+const ProjectSingle: FC<ProjectSingleProps> = ({ title, category, image }) => {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      whileHover={{ scale: 1.03 }}
       transition={{
         ease: "easeInOut",
-        duration: 0.7,
-        delay: 0.15,
+        duration: 0.3,
       }}
     >
       <div className="shadow-md hover:shadow-xl transition-all cursor-pointer">
@@ -16,7 +23,7 @@ const ProjectSingle = ({ title, category, image }) => {
           <img
             src={image}
             className="border-none"
-            alt={`Project of - ${title}`}
+            alt={`Screenshot of ${title} project`}
           />
         </div>
         <div className="px-4 py-6 text-base text-center sm:text-sm">

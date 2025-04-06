@@ -1,9 +1,17 @@
-import { useContext } from "react";
-import SingleProjectContext from "../../context/SingleProjectContext";
+import { FC } from "react";
+import { useSingleProject } from "../../context/SingleProjectContext";
 
-const ProjectInfo = ({ projectId }) => {
-  const { singleProjectData } = useContext(SingleProjectContext);
+interface ProjectInfoProps {
+  projectId: string;
+}
+
+const ProjectInfo: FC<ProjectInfoProps> = ({ projectId }) => {
+  const { singleProjectData } = useSingleProject();
   const projectData = singleProjectData[projectId];
+
+  if (!projectData) return null;
+
+  const { projectInfo } = projectData;
 
   return (
     <div className="mx-auto container">
@@ -12,10 +20,10 @@ const ProjectInfo = ({ projectId }) => {
           {/* Single project client details */}
           <div className="mb-7">
             <h4 className="mb-1 font-semibold tracking-wide">
-              {projectData.projectInfo.clientHeading}
+              {projectInfo.clientHeading}
             </h4>
             <ul className="leading-loose tracking-wide">
-              {projectData.projectInfo.companyInfo.map((info) => {
+              {projectInfo.companyInfo.map((info) => {
                 return (
                   <li key={info.id}>
                     {info.title === "Website" ? (
@@ -38,8 +46,8 @@ const ProjectInfo = ({ projectId }) => {
           {/* Single project technologies */}
           <div className="mb-7">
             <p className="leading-loose tracking-wide">
-              {projectData.projectInfo.technologies[0].emoji}:{" "}
-              {projectData.projectInfo.technologies[0].techs.join(", ")}
+              {projectInfo.technologies[0].emoji}:{" "}
+              {projectInfo.technologies[0].techs.join(", ")}
             </p>
           </div>
         </div>
@@ -47,9 +55,9 @@ const ProjectInfo = ({ projectId }) => {
         {/*  Single project right section */}
         <div className="mt-10 sm:mt-0 w-full sm:w-2/3 text-left">
           <h3 className="mb-5 text-xl tracking-wide">
-            {projectData.projectInfo.projectDetailsHeader}
+            {projectInfo.projectDetailsHeader}
           </h3>
-          {projectData.projectInfo.projectDetails.map((details) => {
+          {projectInfo.projectDetails.map((details) => {
             return (
               <p className="mb-4 leading-loose" key={details.id}>
                 {details.details}
