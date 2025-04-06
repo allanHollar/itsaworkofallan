@@ -26,7 +26,7 @@ const AnimatedProgressBar = ({ resume }: { resume: LanguageItem }) => {
         bgColor={resume.bgColor}
         borderRadius="0px"
         completed={animatedCompleted}
-        height={45}
+        height="45"
         isLabelVisible={false}
         width="97%"
         transitionDuration="2s"
