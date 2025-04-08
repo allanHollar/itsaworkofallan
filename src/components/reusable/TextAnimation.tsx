@@ -54,3 +54,48 @@ export const BlurIn = ({
     </motion.p>
   );
 };
+
+export function TextFade({
+  direction,
+  children,
+  className = "",
+  staggerChildren = 0.1,
+}: {
+  direction: "up" | "down";
+  children: React.ReactNode;
+  className?: string;
+  staggerChildren?: number;
+}) {
+  const FADE_DOWN = {
+    show: { opacity: 1, y: 0, transition: { type: "spring" } },
+    hidden: { opacity: 0, y: direction === "down" ? -18 : 18 },
+  };
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: true });
+  return (
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={isInView ? "show" : ""}
+      transition={{ delay: 1500 }}
+      variants={{
+        hidden: {},
+        show: {
+          transition: {
+            staggerChildren: staggerChildren,
+          },
+        },
+      }}
+      viewport={{ amount: "all", once: true }}
+      className={className}
+    >
+      {React.Children.map(children, (child) =>
+        React.isValidElement(child) ? (
+          <motion.div variants={FADE_DOWN}>{child}</motion.div>
+        ) : (
+          child
+        )
+      )}
+    </motion.div>
+  );
+}

@@ -1,5 +1,6 @@
 import { useREsumeContext } from "../../../context/ResumeContext";
 import CoffeeCup from "../../reusable/CoffeeCup/CoffeeCup";
+import { TextFade } from "../../reusable/TextAnimation";
 
 const WorkHistory = () => {
   const { resume } = useREsumeContext();
@@ -21,21 +22,23 @@ const WorkHistory = () => {
       <div className="pb-3 sm:pb-5 w-full sm:w-3/4">
         {resume.workHistory.map((workItem, index) => (
           <div key={index} className="mb-5 leading-relaxed">
-            <h4 className="font-semibold text-xl tracking-wide">
-              {workItem.company}
-            </h4>
+            <TextFade direction="up">
+              <h4 className="font-semibold text-xl tracking-wide">
+                {workItem.company}
+              </h4>
 
-            <p className="mb-5 text-base italic">
-              {workItem.jobTitle} - {workItem.tenure}
-            </p>
+              <p className="mb-5 text-base italic">
+                {workItem.jobTitle} - {workItem.tenure}
+              </p>
 
-            <ul className="mb-7 ml-3 list-disc">
-              {workItem.responsibilities.map((responsibility, index) => (
-                <li key={index} className="mb-3">
-                  {responsibility}
-                </li>
-              ))}
-            </ul>
+              <ul className="mb-7 ml-3 list-disc">
+                {workItem.responsibilities.map((responsibility, index) => (
+                  <li key={index} className="mb-3">
+                    {responsibility}
+                  </li>
+                ))}
+              </ul>
+            </TextFade>
 
             {index !== resume.workHistory.length - 1 && <hr />}
           </div>
