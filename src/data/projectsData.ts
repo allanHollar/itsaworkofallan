@@ -1,28 +1,29 @@
 import { ProjectFullDetails } from "../types/types";
+import { cdnBaseUrl } from "../config";
 
-import fiveBelowOne from "../images/project-fivebelow-1.webp";
-import fiveBelowTwo from "../images/project-fivebelow-2.webp";
-import fiveBelowThree from "../images/project-fivebelow-3.webp";
+const fiveBelowOne = `${cdnBaseUrl}project-fivebelow-1.webp`;
+const fiveBelowTwo = `${cdnBaseUrl}project-fivebelow-2.webp`;
+const fiveBelowThree = `${cdnBaseUrl}project-fivebelow-3.webp`;
 
-import hollarOne from "../images/project-hollar-1.webp";
-import hollarTwo from "../images/project-hollar-2.webp";
-import hollarThree from "../images/project-hollar-3.webp";
+const hollarOne = `${cdnBaseUrl}/project-hollar-1.webp`;
+const hollarTwo = `${cdnBaseUrl}/project-hollar-2.webp`;
+const hollarThree = `${cdnBaseUrl}/project-hollar-3.webp`;
 
-import masterClassOne from "../images/project-masterclass-1.webp";
-import masterClassTwo from "../images/project-masterclass-2.webp";
-import masterClassThree from "../images/project-masterclass-3.webp";
+const masterClassOne = `${cdnBaseUrl}/project-masterclass-1.webp`;
+const masterClassTwo = `${cdnBaseUrl}/project-masterclass-2.webp`;
+const masterClassThree = `${cdnBaseUrl}/project-masterclass-3.webp`;
 
-import pledgelingOne from "../images/project-pledgeling-1.webp";
-import pledgelingTwo from "../images/project-pledgeling-2.webp";
-import pledgelingThree from "../images/project-pledgeling-3.webp";
+const pledgelingOne = `${cdnBaseUrl}/project-pledgeling-1.webp`;
+const pledgelingTwo = `${cdnBaseUrl}/project-pledgeling-2.webp`;
+const pledgelingThree = `${cdnBaseUrl}/project-pledgeling-3.webp`;
 
-import mogreetOne from "../images/project-mogreet-1.webp";
-import mogreetThree from "../images/project-mogreet-2.webp";
-import mogreetTwo from "../images/project-mogreet-3.webp";
+const mogreetOne = `${cdnBaseUrl}/project-mogreet-1.webp`;
+const mogreetThree = `${cdnBaseUrl}/project-mogreet-2.webp`;
+const mogreetTwo = `${cdnBaseUrl}/project-mogreet-3.webp`;
 
-import clientWorkOne from "../images/project-clients-1.webp";
-import clientWorkTwo from "../images/project-clients-2.webp";
-import clientWorkThree from "../images/project-clients-3.webp";
+const clientWorkOne = `${cdnBaseUrl}/project-clients-1.webp`;
+const clientWorkTwo = `${cdnBaseUrl}/project-clients-2.webp`;
+const clientWorkThree = `${cdnBaseUrl}/project-clients-3.webp`;
 
 export const projectsData: ProjectFullDetails = {
   "project-one": {
@@ -92,7 +93,7 @@ export const projectsData: ProjectFullDetails = {
         {
           id: 2,
           details:
-            "One of our biggest challenges at Five Below was ensuring performance and stability during high-traffic events, like seasonal sales and product launches. To address this, we prioritized performance optimization and load testing, identifying and resolving bottlenecks to improve page load times and responsiveness. Implementing dynamic UI components and conducting thorough code reviews helped maintain a robust and scalable architecture. We also focused on enhancing accessibility and cross-browser compatibility, ensuring that users from diverse environments could easily navigate the site. The successful re-platforming effort not only improved the website's performance and scalability but also boosted customer satisfaction and engagement. This experience honed my ability to collaborate effectively, solve technical challenges, and deliver impactful solutions in a fast-paced, dynamic environment.",
+            "One of our biggest challenges at Five Below was ensuring performance and stability during high-traffic events, like seasonal sales and product launches. To address this, we prioritized performance optimization and load testing, identifying and resolving bottlenecks to improve page load times and responsiveness. Implementing dynamic UI components and conducting thorough code reviews helped maintain a robust and scalable architecture. We also focused on enhancing accessibility and cross-browser compatibility, ensuring that users = diverse environments could easily navigate the site. The successful re-platforming effort not only improved the website's performance and scalability but also boosted customer satisfaction and engagement. This experience honed my ability to collaborate effectively, solve technical challenges, and deliver impactful solutions in a fast-paced, dynamic environment.",
         },
       ],
     },
@@ -160,7 +161,7 @@ export const projectsData: ProjectFullDetails = {
         {
           id: 1,
           details:
-            "At Hollar, I was one of the first engineers to join a small startup team of around 15 people, which eventually grew to 45 members. Hollar was an online dollar store dedicated to providing great products at affordable prices, attracting a large and diverse customer base. As part of a tight-knit tech team of about 10 people, I played a crucial role in building and scaling the platform from the ground up. My primary focus was developing responsive and scalable UI components using React, JavaScript, HTML, and CSS, while also working closely with designers, product managers, and backend engineers to create seamless user experiences.",
+            "At Hollar, I was one of the first engineers to join a small startup team of around 15 people, which eventually grew to 45 members. Hollar was an online dollar store dedicated to providing great products at affordable prices, attracting a large and diverse customer base. As part of a tight-knit tech team of about 10 people, I played a crucial role in building and scaling the platform = the ground up. My primary focus was developing responsive and scalable UI components using React, JavaScript, HTML, and CSS, while also working closely with designers, product managers, and backend engineers to create seamless user experiences.",
         },
         {
           id: 2,

@@ -1,6 +1,9 @@
 import { useAboutMe } from "../../context/AboutMeContext";
-import profileImage from "../../images/ar-profile.webp";
 import { TextFade } from "../reusable/TextAnimation";
+import { cdnBaseUrl } from "../../config";
+
+const profileImage = `${cdnBaseUrl}/ar-profile.webp`;
+
 const AboutMeBio = () => {
   const { aboutMe } = useAboutMe();
 

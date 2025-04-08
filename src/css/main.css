@@ -1065,11 +1065,11 @@ select {
 }
 
 .bg-footer-image {
-  background-image: url('/src/images/footer.webp');
+  background-image: url('https://ddxnp40hswui0.cloudfront.net/footer.webp');
 }
 
 .bg-hero-image-mobile {
-  background-image: url('/src/images/hero-mobile.webp');
+  background-image: url('https://ddxnp40hswui0.cloudfront.net/hero-mobile.webp');
 }
 
 .bg-cover {
@@ -1418,7 +1418,7 @@ select {
   }
 
   .sm\:bg-hero-image {
-    background-image: url('/src/images/hero.webp');
+    background-image: url('https://ddxnp40hswui0.cloudfront.net/hero.webp');
   }
 
   .sm\:py-10 {

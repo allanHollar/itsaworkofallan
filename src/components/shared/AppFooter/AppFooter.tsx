@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { TextFade } from "../../reusable/TextAnimation";
+import { cdnBaseUrl } from "../../../config";
 import AppFooterCopyright from "../AppFooterCopyright";
-import profileImage from "../../../images/ar-anime-profile.webp";
 import Sakura from "../../reusable/Sakura/Sakura";
 import "./social.css";
 
@@ -11,6 +11,8 @@ interface SocialLink {
   icon: JSX.Element;
   url: string;
 }
+
+const ProfileImage = `${cdnBaseUrl}/ar-anime-profile.webp`;
 
 const socialLinks: SocialLink[] = [
   {
@@ -45,14 +47,14 @@ const AppFooter = () => {
       </TextFade>
       <div className="z-10 items-end mx-auto container">
         <div className="opacity-95 mx-auto mt-5 border-8 border-white rounded-full w-40 h-40 overflow-hidden">
-          <img src={profileImage} alt="" width={144} height={144} />
+          <img src={ProfileImage} alt="" width={144} height={144} />
         </div>
 
-        <div className="social-overlap process-scetion mt100">
+        <div className="social-overlap process-section mt100">
           <div>
             <div className="justify-content-center row">
               <div className="social-bar">
-                <div className="mb-3 text-center social-icons iconpad">
+                <div className="mb-3 text-center social-icons">
                   <ul className="inline-block m-auto mt-5 border-white border-t-[3px] w-3/4 sm:w-1/3 text-center">
                     {socialLinks.map((link, index) => (
                       <li className="inline" key={index}>

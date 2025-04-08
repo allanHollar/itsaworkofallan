@@ -1,11 +1,12 @@
 import { ProjectData } from "../types/types";
+import { cdnBaseUrl } from "../config";
 
-import PorjectClentWork from "../images/project-clients-1.webp";
-import ProjectFiveBelow from "../images/project-fivebelow-1.webp";
-import ProjectHollar from "../images/project-hollar-1.webp";
-import ProjectMasterClass from "../images/project-masterclass-1.webp";
-import ProjectMogreet from "../images/project-mogreet-1.webp";
-import ProjectPledgeling from "../images/project-pledgeling-1.webp";
+const PorjectClentWork = `${cdnBaseUrl}/project-clients-1.webp`;
+const ProjectFiveBelow = `${cdnBaseUrl}/project-fivebelow-1.webp`;
+const ProjectHollar = `${cdnBaseUrl}/project-hollar-1.webp`;
+const ProjectMasterClass = `${cdnBaseUrl}/project-masterclass-1.webp`;
+const ProjectMogreet = `${cdnBaseUrl}/project-mogreet-1.webp`;
+const ProjectPledgeling = `${cdnBaseUrl}/project-pledgeling-1.webp`;
 
 export const projectsData: ProjectData = {
   "project-one": {

@@ -1,12 +1,15 @@
-import funnyCat from "../../../images/cute-cat.webp";
+import { FC } from "react";
+import { cdnBaseUrl } from "../../../config";
 import styles from "./FunnyCat.module.scss";
 
-const FunnyCat = () => {
+const FunnyCatImage = `${cdnBaseUrl}/cute-cat.webp`;
+
+const FunnyCat: FC = () => {
   return (
     <div className={styles.catContainer}>
       <div className={styles.cat}>
         <img
-          src={funnyCat}
+          src={FunnyCatImage}
           alt="Cat playing with a ball"
           width={200}
           height={200}

@@ -2,8 +2,10 @@ import { FC } from "react";
 import { useProjects } from "../../context/ProjectsContext";
 import { Link } from "react-router-dom";
 import ProjectSingle from "./ProjectSingle";
-import HappyNinja from "../../images/happy-ninja.webp";
 import { Project } from "../../types/types";
+import { cdnBaseUrl } from "../../config";
+
+const HappyNinja = `${cdnBaseUrl}/happy-ninja.webp`;
 
 const ProjectsGrid: FC = () => {
   const { projects } = useProjects();
@@ -28,9 +30,8 @@ const ProjectsGrid: FC = () => {
       </div>
 
       <div className="sm:gap-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 mb-5">
-        {Object.keys(projects).map((projectId: keyof typeof projects) => {
-          const projectData = projects[projectId];
-          return (
+        {Object.entries(projects).map(
+          ([projectId, projectData]: [string, Project]) => (
             <Link
               to={`/projects/${projectId}`}
               key={projectId}
@@ -42,8 +43,8 @@ const ProjectsGrid: FC = () => {
                 image={projectData.img}
               />
             </Link>
-          );
-        })}
+          )
+        )}
       </div>
     </section>
   );

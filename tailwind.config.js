@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require("tailwindcss/colors");
+const cdnBaseUrl = "https://ddxnp40hswui0.cloudfront.net";
 
 module.exports = {
   content: [
@@ -13,9 +14,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-image": "url('/src/images/hero.webp')",
-        "hero-image-mobile": "url('/src/images/hero-mobile.webp')",
-        "footer-image": "url('/src/images/footer.webp')",
+        "hero-image": `url('${cdnBaseUrl}/hero.webp')`,
+        "hero-image-mobile": `url('${cdnBaseUrl}/hero-mobile.webp')`,
+        "footer-image": `url('${cdnBaseUrl}/footer.webp')`,
       },
       boxShadow: {
         "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
