@@ -1,4 +1,4 @@
-import { AnimatePresence, motion, useInView } from "framer-motion";
+import { AnimatePresence, delay, motion, useInView } from "framer-motion";
 import * as React from "react";
 
 export const PageHeading = ({
@@ -77,12 +77,12 @@ export function TextFade({
       ref={ref}
       initial="hidden"
       animate={isInView ? "show" : ""}
-      transition={{ delay: 1500 }}
       variants={{
         hidden: {},
         show: {
           transition: {
             staggerChildren: staggerChildren,
+            delayChildren: staggerChildren,
           },
         },
       }}
