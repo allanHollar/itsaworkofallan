@@ -1,9 +1,9 @@
 import { ProjectFullDetails } from "../types/types";
 import { cdnBaseUrl } from "../config";
 
-const fiveBelowOne = `${cdnBaseUrl}project-fivebelow-1.webp`;
-const fiveBelowTwo = `${cdnBaseUrl}project-fivebelow-2.webp`;
-const fiveBelowThree = `${cdnBaseUrl}project-fivebelow-3.webp`;
+const fiveBelowOne = `${cdnBaseUrl}/project-fivebelow-1.webp`;
+const fiveBelowTwo = `${cdnBaseUrl}/project-fivebelow-2.webp`;
+const fiveBelowThree = `${cdnBaseUrl}/project-fivebelow-3.webp`;
 
 const hollarOne = `${cdnBaseUrl}/project-hollar-1.webp`;
 const hollarTwo = `${cdnBaseUrl}/project-hollar-2.webp`;
