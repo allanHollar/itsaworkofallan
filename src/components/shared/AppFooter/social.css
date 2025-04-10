@@ -10,7 +10,7 @@
   font-size: 22px;
 }
 
-.process-scetion .slider-nav-item {
+.process-section .slider-nav-item {
   position: relative;
   flex-grow: 0;
   flex-shrink: 0;
@@ -21,7 +21,7 @@
   transition: all 0.4s ease;
   opacity: 0.85;
 }
-.process-scetion .slider-nav-item .ikon {
+.process-section .slider-nav-item .ikon {
   font-size: 42px;
   line-height: 72px;
 }
@@ -133,7 +133,7 @@
 }
 
 @media only screen and (max-width: 300px) {
-  .process-scetion .slider-nav-item {
+  .process-section .slider-nav-item {
     height: 30px;
     width: 30px;
     margin: 15px 10px;
